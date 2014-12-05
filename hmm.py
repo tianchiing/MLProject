@@ -56,11 +56,14 @@ class HMM:
 	def tag_exist(self, y):
 		return y in self.tags
 
-	def is_word_exist(self, x):
-		return x in self.words
+	def is_word_not_exist(self, x):
+		return x not in self.words
 
 	def getwords(self):
 		return self.words
+
+	def gettags(self):
+		return self.tags
 
 	def set_tags(self, t):
 		self.tags = t
@@ -70,13 +73,19 @@ class HMM:
 			f.write(self.words[i] + "\t" + self.tags[i] + "\n")
 		f.write("\n")
 
+	def get_unique_words(self):
+		result = []
+		for i in self.words:
+			if i not in result:
+				result.append(i)
+		return result
 
-	# def get_unique_tags(self):
-	# 	result = []
-	# 	for i in self.tags:
-	# 		if i not in result:
-	# 			result.append(i)
-	# 	return result
+	def get_accuracy_count(self, hmm):
+		correct = 0
+		for i in range(self.get_size()):
+			if self.tags[i] == hmm.gettags()[i]:
+				correct += 1
+		return correct, self.get_size()
 
 
 class SETS:
@@ -116,41 +125,39 @@ class SETS:
 	def is_new_word(self, x):
 		result = True
 		for i in self.hmmset:
-			result = result and i.is_word_exist(x)
+			result = result and i.is_word_not_exist(x)
 		return result
 
 	def pos_tagger(self, x):
 		maximum = 0
 		y = ""
 		for i in TAGS:
-			# print maximum
 			temp = self.estimate_emission_param(i, x)
+			# print temp
 			if temp > maximum:
 				maximum = temp
 				y = i
 		return y
 
-	def get_hmm_set(self):
+	def get_hmmset(self):
 		return self.hmmset
 
-	def get_accuracy(self, filename):
-		for i in self.hmmset:
-			temp = []
-			for j in i.getwords:
-				temp.append(self.pos_tagger(j))
-			i.set_tags(temp)
-		f = open(filename, "r+")
-		for i in self.hmmset:
-			i.write_to_file(f)
-		f.close()
+	def get_accuracy(self, sets):
+		correct = 0
+		total = 0
+		for i in range(0, len(self.hmmset)):
+			temp1, temp2 = self.hmmset[i].get_accuracy_count(sets.get_hmmset()[i])
+			correct += temp1
+			total += temp2
+		return correct/float(total)
 
-	# def gettags(self):
-	# 	result = []
-	# 	for i in self.hmmset:
-	# 		for j in i.gettags():
-	# 			if j not in result:
-	# 				result.append(j)
-	# 	return result
+	def getwords(self):
+		result = []
+		for i in self.hmmset:
+			for j in i.get_unique_words():
+				if j not in result:
+					result.append(j)
+		return result
 
 
 def readtrain():
@@ -218,33 +225,76 @@ def readdevin():
 		devin_set.add(tweet)
 	return devin_set
 
+def readdevoutp1():
+	# read devin files from current directory
+	# return a list of tweets, within which contains one sequential list of words
+	# current file path
+	path = os.path.dirname(os.path.realpath(__file__))
+	# read files to look for
+	devin = open(path + "\\dev.p1.out").read()
+	# print "Reading dev.in file with " + str(len(devin.split("\n\n"))) + " tweets"
+
+	devin_set = SETS()
+	for i in devin.split("\n\n"):
+		tweet = HMM()
+		for j in i.split("\n"):
+			# handle file ending
+			if len(j) == 0:
+				continue
+			tweet.add_to_words(j.split("\t")[0])
+			tweet.add_to_tags(j.split("\t")[1])
+		devin_set.add(tweet)
+	return devin_set
+
 if __name__=="__main__":
 	# main function here
 	# read files
 	trainingset = readtrain()
 	devinset = readdevin()
-	print trainingset.size()
-	print devinset.size()
-	print readdevout().size()
-	print trainingset.estimate_emission_param("N", "yard")
-	print trainingset.estimate_emission_param("Y", "yard")
+	# print trainingset.size()
+	# print devinset.size()
+	# print readdevout().size()
+	# print trainingset.estimate_emission_param("N", "yard")
+	# print trainingset.estimate_emission_param("Y", "yard")
 	# print trainingset.gettags()
-	print trainingset.pos_tagger("yard")
+	# print trainingset.pos_tagger("yard")
+	# print trainingset.pos_tagger("@USER_0240cb3a")
 
-	filename = "dev.p1.out"
-	counter = 0
-	for i in devinset.get_hmm_set():
-		counter += 1
-		print counter
-		# temp = []
-		for j in i.getwords():
-			# print j
-			i.add_to_tags(trainingset.pos_tagger(j))
-	f = open(filename, "r+")
-	# print "here"
-	for i in devinset.get_hmm_set():
-		i.write_to_file(f)
-	f.close()
+	# print len(devinset.getwords())
+	# pairs = {}
+
+	# filename = "dev.p1.out"
+	# f = open(filename, "r+")
+	# counter = 0
+	# for i in devinset.getwords():
+	# 	print counter
+	# 	counter += 1
+	# 	pairs[i] = trainingset.pos_tagger(i)
+	# devin = open(os.path.dirname(os.path.realpath(__file__)) + "\\dev.in").read()
+	# for i in devin.split("\n\n"):
+	# 	for j in i.split("\n"):
+	# 		if len(j) == 0:
+	# 			continue
+	# 		f.write(j + "\t" + pairs[j] + "\n")
+	# 	f.write("\n")
+	# f.close()
+
+	print readdevoutp1().get_accuracy(readdevout())
+
+	# filename = "dev.p1.out"
+	# counter = 0
+	# for i in devinset.get_hmm_set():
+	# 	counter += 1
+	# 	print counter
+	# 	# temp = []
+	# 	for j in i.getwords():
+	# 		# print j
+	# 		i.add_to_tags(trainingset.pos_tagger(j))
+	# f = open(filename, "r+")
+	# # print "here"
+	# for i in devinset.get_hmm_set():
+	# 	i.write_to_file(f)
+	# f.close()
 
 	# print trainingset.getfirst()
 	# test()
