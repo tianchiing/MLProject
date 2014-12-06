@@ -5,8 +5,21 @@
 
 # import libs
 import os
+import sys
+import math
+import copy
 
 TAGS = ['~', '@', 'O', 'V', '^', ',', '$', 'R', 'A', '!', 'P', 'T', 'N', '&', 'D', '#', 'G', 'U', 'L', 'E', 'X', 'Z', 'S', 'M', 'Y']
+TAGS_INDEX = {'!': 9, '#': 15, '$': 6, '&': 13, ',': 5, 'A': 8, '@': 1, 'E': 19, 'D': 14, 'G': 16, 'M': 23, 'L': 18, 'O': 2, 'N': 12, 'P': 10, 'S': 22, 'R': 7, 'U': 17, 'T': 11, 'V': 3, 'Y': 24, 'X': 20, 'Z': 21, '^': 4, '~': 0}
+TRANS_PARAM = []
+TRANS_PARAM_SS = []
+EMISS_PARAM = {}
+
+def log(i):
+	if i == 0:
+		return - sys.maxint - 1
+	else:
+		return math.log(i)
 
 class HMM:
 	def __init__(self):
@@ -20,9 +33,11 @@ class HMM:
 		self.tags.append(tag)
 
 	def get_size(self):
-		return len(self.words)
+		return len(self.tags)
 
 	def count_y(self, y):
+		if y == "start" or y == "end":
+			return 1
 		temp = 0
 		# print "here"
 		for i in self.tags:
@@ -30,17 +45,17 @@ class HMM:
 				temp += 1
 		return temp
 
-	def count_tran(self, y = "start", x = "end"):
+	def count_tran(self, y = "start", yp = "end"):
 		temp = 0
 		if y == "start":
-			return 1 if self.tags[0] == x else 0
+			return 1 if self.tags[0] == yp else 0
 
-		if x == "end":
+		if yp == "end":
 			return 1 if self.tags[-1] == y else 0
 			
-		for i in range(0, self.get_size()):
+		for i in range(0, self.get_size() - 1):
 			if self.tags[i] == y:
-				if self.tags[i + 1] == x:
+				if self.tags[i + 1] == yp:
 					temp += 1
 		return temp
 
@@ -87,6 +102,80 @@ class HMM:
 				correct += 1
 		return correct, self.get_size()
 
+	# def viterbi(self):
+	# 	# start point
+	# 	result = []
+	# 	temp = []
+	# 	for i in TAGS:
+	# 		temp.append(TRANS_PARAM_SS[TAGS_INDEX[i]][0] * EMISS_PARAM[self.words[0]][i])
+	# 	result.append(temp)
+	# 	for i in self.words[1:]:
+	# 		temp = []
+	# 		for j in TAGS:
+	# 			maximum = 0
+	# 			previous = result[-1]
+	# 			for k in range(0, len(previous)):
+	# 				pi = previous[k] * TRANS_PARAM[k][TAGS_INDEX[j]] * EMISS_PARAM[i][j]
+	# 				if pi > maximum:
+	# 					maximum = pi
+	# 			temp.append(maximum)
+	# 		result.append(temp)
+	# 	maximum = 0
+	# 	for i in range(0, len(result[-1])):
+	# 		pi = result[-1][i] * TRANS_PARAM_SS[i][1]
+	# 		if pi > maximum:
+	# 			maximum = pi
+	# 	return maximum
+
+	def viterbi(self):
+		# forward
+		# start point
+		result = []
+		steps = []
+		temp = []
+		for i in TAGS:
+			temp.append(log(TRANS_PARAM_SS[TAGS_INDEX[i]][0]) + log(EMISS_PARAM[self.words[0]][i]))
+		result.append(temp)
+		for i in self.words[1:]:
+			temp = []
+			for j in TAGS:
+				maximum = - sys.maxint - 1
+				previous = result[-1]
+				for k in range(0, len(previous)):
+					pi = previous[k] + log(TRANS_PARAM[k][TAGS_INDEX[j]]) + log(EMISS_PARAM[i][j])
+					if pi > maximum:
+						maximum = pi
+				temp.append(maximum)
+			result.append(temp)
+		maximum = - sys.maxint - 1
+		temptag = "Y"
+		for i in range(0, len(result[-1])):
+			pi = result[-1][i] + log(TRANS_PARAM_SS[i][1])
+			if pi > maximum:
+				maximum = pi
+				temptag = TAGS[i]
+		steps.append(temptag)
+		## maximum is the final largest pi
+		## backward
+		## final case
+		# print result
+		for i in range(1, len(self.words)):
+			currentword = self.words[-i]
+			maximum = - sys.maxint - 1
+			previoustag = steps[-1]
+			temptag = "Y"
+			# print currentword
+			# print previoustag
+			for j in TAGS:
+				# print "t:" + j
+				pi = result[-i-1][TAGS_INDEX[j]] + log(TRANS_PARAM[TAGS_INDEX[j]][TAGS_INDEX[previoustag]]) + log(EMISS_PARAM[currentword][previoustag])
+				if pi > maximum:
+					maximum = pi
+					temptag = j
+			steps.append(temptag)
+		steps_inverse = [i for i in reversed(steps)]
+		self.tags = copy.deepcopy(steps_inverse)
+
 
 class SETS:
 	def __init__(self):
@@ -131,12 +220,14 @@ class SETS:
 	def pos_tagger(self, x):
 		maximum = 0
 		y = ""
+		d = {}
 		for i in TAGS:
 			temp = self.estimate_emission_param(i, x)
-			# print temp
+			d[i] = temp
 			if temp > maximum:
 				maximum = temp
 				y = i
+		EMISS_PARAM[x] = d
 		return y
 
 	def get_hmmset(self):
@@ -154,10 +245,18 @@ class SETS:
 	def getwords(self):
 		result = []
 		for i in self.hmmset:
-			for j in i.get_unique_words():
+			for j in i.getwords():
 				if j not in result:
 					result.append(j)
 		return result
+
+	def trans_y_to_yp(self, y, yp):
+		temp1 = 0
+		temp2 = 0
+		for i in self.hmmset:
+			temp1 += i.count_tran(y, yp)
+			temp2 += i.count_y(y)
+		return float(temp1)/temp2
 
 
 def readtrain():
@@ -167,7 +266,7 @@ def readtrain():
 	# current file path
 	path = os.path.dirname(os.path.realpath(__file__))
 	# read files to look for
-	train = open(path + "\\train").read()
+	train = open(path + "\\trainc").read()
 	print "Reading train file with " + str(len(train.split("\n\n"))) + " tweets"
 
 	train_set = SETS()
@@ -179,17 +278,18 @@ def readtrain():
 				continue
 			tweet.add_to_words(j.split("\t")[0])
 			tweet.add_to_tags(j.split("\t")[1])
-		train_set.add(tweet)
+		if tweet.get_size() > 0:
+			train_set.add(tweet)
 	return train_set
 
-def readdevout():
+def readdevout(filename = "\\dev.out"):
 	# read devout files from current directory
 	# return a list of tweets, within which contains two sequential lists
 	# of words and tags (why not dictionary? words might duplicate)
 	# current file path
 	path = os.path.dirname(os.path.realpath(__file__))
 	# read files to look for
-	devout = open(path + "\\dev.out").read()
+	devout = open(path + filename).read()
 	print "Reading dev.out file with " + str(len(devout.split("\n\n"))) + " tweets"
 
 	devout_set = SETS()
@@ -197,11 +297,12 @@ def readdevout():
 		tweet = HMM()
 		for j in i.split("\n"):
 			# handle file ending
-			if len(j) == 0:
+			if len(j) == 0 or len(j.split("\t")) == 1:
 				continue
 			tweet.add_to_words(j.split("\t")[0])
 			tweet.add_to_tags(j.split("\t")[1])
-		devout_set.add(tweet)
+		if tweet.get_size() > 0:
+			devout_set.add(tweet)
 	return devout_set
 	
 
@@ -222,7 +323,8 @@ def readdevin():
 			if len(j) == 0:
 				continue
 			tweet.add_to_words(j.split("\t")[0])
-		devin_set.add(tweet)
+		if len(tweet.getwords()) > 0:
+			devin_set.add(tweet)
 	return devin_set
 
 def readdevoutp1():
@@ -243,7 +345,8 @@ def readdevoutp1():
 				continue
 			tweet.add_to_words(j.split("\t")[0])
 			tweet.add_to_tags(j.split("\t")[1])
-		devin_set.add(tweet)
+		if tweet.get_size() > 0:
+			devin_set.add(tweet)
 	return devin_set
 
 if __name__=="__main__":
@@ -251,50 +354,62 @@ if __name__=="__main__":
 	# read files
 	trainingset = readtrain()
 	devinset = readdevin()
-	# print trainingset.size()
-	# print devinset.size()
-	# print readdevout().size()
-	# print trainingset.estimate_emission_param("N", "yard")
-	# print trainingset.estimate_emission_param("Y", "yard")
-	# print trainingset.gettags()
-	# print trainingset.pos_tagger("yard")
-	# print trainingset.pos_tagger("@USER_0240cb3a")
+	devoutset = readdevout()
+	pairs = {}
 
-	# print len(devinset.getwords())
-	# pairs = {}
+	filename = "dev.p1.out"
+	f = open(filename, "w+")
+	counter = 0
+	# print "@USER_44285fcc" in devinset.getwords()
+	for i in devinset.getwords():
+		print counter
+		counter += 1
+		pairs[i] = trainingset.pos_tagger(i)
+	devin = open(os.path.dirname(os.path.realpath(__file__)) + "\\dev.in").read()
+	# print pairs
+	for i in devin.split("\n\n"):
+		for j in i.split("\n"):
+			if len(j) == 0:
+				continue
+			f.write(j + "\t" + pairs[j] + "\n")
+		f.write("\n")
+	f.close()
+	# print readdevoutp1().get_accuracy(readdevout())
+	print EMISS_PARAM.keys()
 
-	# filename = "dev.p1.out"
-	# f = open(filename, "r+")
-	# counter = 0
-	# for i in devinset.getwords():
-	# 	print counter
-	# 	counter += 1
-	# 	pairs[i] = trainingset.pos_tagger(i)
-	# devin = open(os.path.dirname(os.path.realpath(__file__)) + "\\dev.in").read()
-	# for i in devin.split("\n\n"):
-	# 	for j in i.split("\n"):
-	# 		if len(j) == 0:
-	# 			continue
-	# 		f.write(j + "\t" + pairs[j] + "\n")
-	# 	f.write("\n")
-	# f.close()
+	# Generate TRANS PARAMS
+	for i in TAGS:
+		temp = []
+		for j in TAGS:
+			temp.append(trainingset.trans_y_to_yp(i, j))
+		TRANS_PARAM.append(temp)
+	# print TRANS_PARAM
+	for i in TAGS:
+		temp = [trainingset.trans_y_to_yp("start", i), trainingset.trans_y_to_yp(i, "end")]
+		TRANS_PARAM_SS.append(temp)
+	# print TRANS_PARAM_SS[TAGS_INDEX["@"]]
+	print "emis"
+	print EMISS_PARAM["."]["~"]
+	print "trans"
+	print TRANS_PARAM[TAGS_INDEX["~"]]
 
-	print readdevoutp1().get_accuracy(readdevout())
+	# print "here"
+	# print devinset.get_hmmset()[88].gettags()
+	# print devinset.get_hmmset()[88].getwords()
+	# devinset.get_hmmset()[88].viterbi()
+	# print devinset.get_hmmset()[88].gettags() 
 
-	# filename = "dev.p1.out"
-	# counter = 0
-	# for i in devinset.get_hmm_set():
-	# 	counter += 1
-	# 	print counter
-	# 	# temp = []
-	# 	for j in i.getwords():
-	# 		# print j
-	# 		i.add_to_tags(trainingset.pos_tagger(j))
-	# f = open(filename, "r+")
-	# # print "here"
-	# for i in devinset.get_hmm_set():
-	# 	i.write_to_file(f)
-	# f.close()
+	
+	filename = "dev.p2.out"
+	f = open(filename, "w+")
+	counter = 0
+	for i in devinset.get_hmmset():
+		print counter
+		counter += 1
+		i.viterbi()
+		i.write_to_file(f)
+	f.close()
+	# devoutsetp2 = readdevout("\\dev.p2.out")
+	print devinset.get_accuracy(devoutset)
 
-	# print trainingset.getfirst()
-	# test()
+	# Generate EMIS PARAMS
