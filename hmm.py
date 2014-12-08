@@ -148,7 +148,7 @@ class HMM:
 				temp.append(maximum)
 			result.append(temp)
 		maximum = - sys.maxint - 1
-		temptag = "Y"
+		temptag = "V"
 		for i in range(0, len(result[-1])):
 			pi = result[-1][i] + log(TRANS_PARAM_SS[i][1])
 			if pi > maximum:
@@ -163,7 +163,7 @@ class HMM:
 			currentword = self.words[-i]
 			maximum = - sys.maxint - 1
 			previoustag = steps[-1]
-			temptag = "Y"
+			temptag = "V"
 			# print currentword
 			# print previoustag
 			for j in TAGS:
@@ -388,10 +388,12 @@ if __name__=="__main__":
 		temp = [trainingset.trans_y_to_yp("start", i), trainingset.trans_y_to_yp(i, "end")]
 		TRANS_PARAM_SS.append(temp)
 	# print TRANS_PARAM_SS[TAGS_INDEX["@"]]
-	print "emis"
-	print EMISS_PARAM["."]["~"]
+	# print "emis"
+	# print EMISS_PARAM["Yeah"]["!"]
 	print "trans"
-	print TRANS_PARAM[TAGS_INDEX["~"]]
+	# print TRANS_PARAM[TAGS_INDEX["#"]]
+	print TRANS_PARAM_SS[TAGS_INDEX["#"]]
+	# print TRANS_PARAM[TAGS_INDEX["#"]]
 
 	# print "here"
 	# print devinset.get_hmmset()[88].gettags()
@@ -399,6 +401,7 @@ if __name__=="__main__":
 	# devinset.get_hmmset()[88].viterbi()
 	# print devinset.get_hmmset()[88].gettags() 
 
+	# devinset.get_hmmset()[0].viterbi()
 	
 	filename = "dev.p2.out"
 	f = open(filename, "w+")
