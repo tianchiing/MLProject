@@ -217,7 +217,7 @@ class SETS:
 			result = result and i.is_word_not_exist(x)
 		return result
 
-	def pos_tagger(self, x, no_new_word):
+	def pos_tagger(self, x, no_new_word = 1):
 		maximum = 0
 		y = ""
 		d = {}
@@ -335,6 +335,27 @@ def readdevin():
 			devin_set.add(tweet)
 	return devin_set
 
+def readtestin():
+	# read devin files from current directory
+	# return a list of tweets, within which contains one sequential list of words
+	# current file path
+	path = os.path.dirname(os.path.realpath(__file__))
+	# read files to look for
+	devin = open(path + "\\test.in").read()
+	print "Reading test.in file with " + str(len(devin.split("\n\n"))) + " tweets"
+
+	devin_set = SETS()
+	for i in devin.split("\n\n"):
+		tweet = HMM()
+		for j in i.split("\n"):
+			# handle file ending
+			if len(j) == 0:
+				continue
+			tweet.add_to_words(j.split("\t")[0])
+		if len(tweet.getwords()) > 0:
+			devin_set.add(tweet)
+	return devin_set
+
 def readdevoutp1():
 	# read devin files from current directory
 	# return a list of tweets, within which contains one sequential list of words
@@ -434,4 +455,21 @@ if __name__=="__main__":
 	# devoutsetp2 = readdevout("\\dev.p2.out")
 	print "\nAccuracy:" + str(devinset.get_accuracy(devoutset))
 
-	# Generate EMIS PARAMS
+
+	# print "\n###Part 3###\nProcessing:"
+	
+	# testinset = readtestin()
+	# filename = "dev.p3.out"
+	# f = open(filename, "w+")
+	# counter = 0
+	# length = len(testinset.get_hmmset())
+	# for i in testinset.get_hmmset():
+	# 	# print counter
+	# 	if counter%(length/10) == (length/10)-1:
+	# 		print ".",
+	# 	counter += 1
+	# 	i.viterbi()
+	# 	i.write_to_file(f)
+	# f.close()
+	# # devoutsetp2 = readdevout("\\dev.p2.out")
+	# print "\nAccuracy:" + str(testinset.get_accuracy(devoutset))
