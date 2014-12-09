@@ -16,9 +16,12 @@ TRANS_PARAM = []
 TRANS_PARAM_SS = []
 EMISS_PARAM = {}
 
+PENALTY = -99999
+
 def log(i):
 	if i == 0:
-		return - sys.maxint - 1
+		# return - sys.maxint - 1
+		return PENALTY
 	else:
 		return math.log(i)
 
@@ -103,31 +106,6 @@ class HMM:
 				correct += 1
 		return correct, self.get_size()
 
-	# def viterbi(self):
-	# 	# start point
-	# 	result = []
-	# 	temp = []
-	# 	for i in TAGS:
-	# 		temp.append(TRANS_PARAM_SS[TAGS_INDEX[i]][0] * EMISS_PARAM[self.words[0]][i])
-	# 	result.append(temp)
-	# 	for i in self.words[1:]:
-	# 		temp = []
-	# 		for j in TAGS:
-	# 			maximum = 0
-	# 			previous = result[-1]
-	# 			for k in range(0, len(previous)):
-	# 				pi = previous[k] * TRANS_PARAM[k][TAGS_INDEX[j]] * EMISS_PARAM[i][j]
-	# 				if pi > maximum:
-	# 					maximum = pi
-	# 			temp.append(maximum)
-	# 		result.append(temp)
-	# 	maximum = 0
-	# 	for i in range(0, len(result[-1])):
-	# 		pi = result[-1][i] * TRANS_PARAM_SS[i][1]
-	# 		if pi > maximum:
-	# 			maximum = pi
-	# 	return maximum
-
 	def viterbi(self):
 		# forward
 		# start point
@@ -177,6 +155,21 @@ class HMM:
 		steps_inverse = [i for i in reversed(steps)]
 		self.tags = copy.deepcopy(steps_inverse)
 
+	# def pre_word_process(self):
+	# 	for i in range(0, self.get_size()):
+	# 		self.words[i] = self.words[i].lower()
+
+	def post_tag_process(self):
+		for i in range(0, self.get_size()):
+			k = self.words[i]
+			if k[0] == "@":
+				self.tags[i] = "@"
+			elif k[0] == "#":
+				self.tags[i] = "#"
+			elif k[:4] == "http":
+				self.tags[i] = "U"
+			elif k[0].isdigit():
+				self.tags[i] = "$"
 
 class SETS:
 	def __init__(self):
@@ -297,7 +290,7 @@ def readtrain():
 			# handle file ending
 			if len(j) == 0:
 				continue
-			tweet.add_to_words(j.split("\t")[0])
+			tweet.add_to_words(j.split("\t")[0].lower())
 			tweet.add_to_tags(j.split("\t")[1])
 		if tweet.get_size() > 0:
 			train_set.add(tweet)
@@ -343,7 +336,7 @@ def readdevin():
 			# handle file ending
 			if len(j) == 0:
 				continue
-			tweet.add_to_words(j.split("\t")[0])
+			tweet.add_to_words((j.split("\t")[0]).lower())
 		if len(tweet.getwords()) > 0:
 			devin_set.add(tweet)
 	return devin_set
@@ -364,7 +357,7 @@ def readtestin():
 			# handle file ending
 			if len(j) == 0:
 				continue
-			tweet.add_to_words(j.split("\t")[0])
+			tweet.add_to_words(j.split("\t")[0].lower())
 		if len(tweet.getwords()) > 0:
 			devin_set.add(tweet)
 	return devin_set
@@ -401,6 +394,14 @@ def emis_improvement():
 			for kp in EMISS_PARAM[k].keys():
 				EMISS_PARAM[k][kp] = 0
 			EMISS_PARAM[k]["#"] = 1
+		elif k[:4] == "http":
+			for kp in EMISS_PARAM[k].keys():
+				EMISS_PARAM[k][kp] = 0
+			EMISS_PARAM[k]["U"] = 1
+		if k[0] != "@" and k[0] != "#" and k[:4] != "http":
+			EMISS_PARAM[k]["#"] = 0
+			EMISS_PARAM[k]["@"] = 0
+			EMISS_PARAM[k]["U"] = 0
 
 def readparam(filename):
 	f = open(filename)
@@ -475,9 +476,9 @@ if __name__=="__main__":
 
 	for i in devin.split("\n\n"):
 		for j in i.split("\n"):
-			if len(j) == 0:
+			if len(j.lower()) == 0:
 				continue
-			f.write(j + "\t" + pairs[j] + "\n")
+			f.write(j + "\t" + pairs[j.lower()] + "\n")
 		f.write("\n")
 	f.close()
 	print "\nAccuracy:" + str(readdevoutp1().get_accuracy(devoutset))
@@ -509,8 +510,8 @@ if __name__=="__main__":
 	# devoutsetp2 = readdevout("\\dev.p2.out")
 	print "\nAccuracy:" + str(devinset.get_accuracy(devoutset))
 
-	emis_improvement()
-	filename = "dev.p2.out"
+	emis_improvement() ######
+	filename = "dev.p3.out"
 	f = open(filename, "w+")
 	counter = 0
 	length = len(devinset.get_hmmset())
@@ -520,6 +521,7 @@ if __name__=="__main__":
 			print ".",
 		counter += 1
 		i.viterbi()
+		i.post_tag_process()
 		i.write_to_file(f)
 	f.close()
 	# devoutsetp2 = readdevout("\\dev.p2.out")
