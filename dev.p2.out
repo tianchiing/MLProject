@@ -21,27 +21,27 @@ at	P
 lol	!
 let	V
 me	O
-visit	E
+visit	,
 
 Does	V
 it	O
 feel	V
 like	P
-Summer	$
+Summer	N
 to	P
 you	O
 ?	,
 It	O
 does	V
 in	P
-Myrtle	Z
+Myrtle	^
 Beach	^
 ,	,
 South	^
-Carolina	&
+Carolina	,
 its	L
 85	R
-degrees	E
+degrees	,
 
 @USER_341450c3	@
 no	!
@@ -63,8 +63,8 @@ just	R
 shrug	!
 *	,
 
-Red	M
-wine	A
+Red	O
+wine	V
 in	P
 beautiful	A
 china	N
@@ -80,10 +80,10 @@ RT	~
 :	~
 Vid	@
 &	&
-footage	$
+footage	N
 of	P
-Daytona	$
-Commish	M
+Daytona	D
+Commish	N
 getting	V
 busted	T
 for	P
@@ -100,7 +100,7 @@ eye	N
 on	P
 this	D
 one	$
-particular	S
+particular	A
 guy	N
 ....	,
 i	O
@@ -119,7 +119,7 @@ thanks	!
 
 How	R
 to	P
-Create	X
+Create	V
 the	D
 Perfect	A
 Mudroom	N
@@ -131,7 +131,7 @@ A	D
 mudroom	N
 is	V
 a	D
-terrific	S
+terrific	A
 room	N
 to	P
 have	V
@@ -147,11 +147,11 @@ http://bit.ly/bZiTd2	#
 remember	V
 !	,
 if	P
-ur	L
+ur	D
 in	P
 htown	^
 or	&
-visiting	L
+visiting	V
 this	D
 weekend	N
 ,	,
@@ -160,7 +160,7 @@ are	V
 headed	T
 to	P
 the	D
-drag	S
+drag	A
 show	N
 @	P
 2020	^
@@ -179,7 +179,7 @@ the	D
 court	N
 .	,
 
-Ignite	L
+Ignite	@
 to	P
 Write	^
 :	,
@@ -190,8 +190,8 @@ a	D
 Title	N
 !:	,
 This	D
-photograph	$
-certainly	M
+photograph	N
+certainly	P
 needs	V
 a	D
 title	N
@@ -203,7 +203,7 @@ it	O
 one	$
 ?	,
 It	O
-se	T
+se	V
 ...	,
 http://bit.ly/bz8n9w	U
 
@@ -235,11 +235,11 @@ was	V
 good	A
 while	P
 it	O
-lasted	T
+lasted	V
 *	,
 sighs	U
 
-Gradpics	S
+Gradpics	A
 Today	N
 <3	E
 !!	,
@@ -252,7 +252,7 @@ sunshine	N
 ★ⓕⓤⓒⓚⓘⓝⓕⓞⓛⓛⓞⓦⓝⓞⓦ★	@
 @USER_17d0464e	~
 @USER_27980140	@
-@USER_27703356	#
+@USER_27703356	~
 @USER_1c0417b0	#
 @USER_298682bc	#
 @USER_c366d07e	#
@@ -260,7 +260,7 @@ sunshine	N
 @USER_ac67ddd0	#
 @USER_469f8ede	#
 
-UNC	M
+UNC	O
 lookin	V
 '	,
 good	A
@@ -285,8 +285,8 @@ minimum	D
 wage	N
 .	,
 
-@USER_d37a61e8	~
-Ok	X
+@USER_d37a61e8	@
+Ok	O
 thank	V
 you	O
 !!	,
@@ -295,7 +295,7 @@ I	O
 will	V
 check	V
 it	O
-out♥	E
+out♥	,
 
 What	O
 are	V
@@ -330,7 +330,7 @@ realize	T
 !	,
 [	,
 Phil	^
-Kollar	&
+Kollar	,
 @USER_3d90d287	L
 Really	R
 ?	,
@@ -345,29 +345,29 @@ realize	T
 http://bit.ly/9g4zlQ	U
 
 "	,
-RUN	&
+RUN	!
 DAT	O
 "	,
 by	P
-@USER_cdec18c9	X
+@USER_cdec18c9	O
 ft	V
 .	,
-@USER_4828343a	L
+@USER_4828343a	O
 DOWNLOAD	V
 NOW	R
 !!!!!	,
 http://hulkshare.com/sr9ffmeald2q	U
 
-@USER_895d4942	~
-Omg	X
+@USER_895d4942	@
+Omg	O
 don't	V
 start	V
 with	P
 me	O
 .	,
 
-Free	M
-3pk	A
+Free	O
+3pk	V
 of	P
 Lindt	D
 Truffles	N
@@ -376,25 +376,25 @@ US	^
 )	,
 http://nblo.gs/9Iuzw	U
 
-Pretty	@
-simple	L
+Pretty	~
+simple	@
 actually	R
 .	,
- 	Y
+ 	V
 The	D
 DataContext	N
 will	V
 tunnel	V
 down	T
 to	P
-controls	X
+controls	O
 below	V
 it	O
 in	P
 the	D
 tree	N
 .	,
- 	Y
+ 	V
 The	D
 ListBox	N
 ...	,
@@ -406,8 +406,8 @@ I'm	L
 at	P
 Scopa	^
 (	,
-109A	Y
-Plaza	D
+109A	^
+Plaza	^
 St.	^
 ,	,
 Healdsburg	^
@@ -417,41 +417,41 @@ Healdsburg)	^
 .	,
 http://4sq.com/72fhjG	U
 
-Prescription	~
-glasses	X
+Prescription	@
+glasses	O
 starting	V
 at	P
 $	G
 6.95	G
 !	,
-Virtually	L
+Virtually	O
 try	V
 before	P
 you	O
 buy	V
 with	P
 the	D
-Zenni	$
-Frame	M
-Fit	A
+Zenni	N
+Frame	P
+Fit	^
 !	,
-http://bit.ly/ce5Nvw	E
-(	E
-Ad	E
-)	E
+http://bit.ly/ce5Nvw	!
+(	,
+Ad	!
+)	,
 
-@USER_cbcd21b7	L
+@USER_cbcd21b7	@
 on	P
 my	D
 way	N
 ...	,
 Lol	!
 
-Fake	M
+Fake	L
 weak	A
 music	N
-makers	,
-irritate	Y
+makers	N
+irritate	P
 my	D
 ear	N
 
@@ -468,7 +468,7 @@ truth	N
 ?	,
 What's	L
 the	D
-fuckn	S
+fuckn	A
 point	N
 .	,
 When	R
@@ -478,23 +478,23 @@ tell	V
 the	D
 truth	N
 ...	,
-Lies	L
+Lies	O
 are	V
 not	R
 for	P
 me	O
 .	,
 
-@USER_3137cb3d	M
+@USER_3137cb3d	O
 give	V
 him	O
 my	D
 love	N
 !	,
 
-@USER_e47cf032	M
-V____V	A
-so	P
+@USER_e47cf032	~
+V____V	@
+so	R
 I	O
 am	V
 Frank	T
@@ -521,7 +521,7 @@ at	P
 @USER_7e5fc5f3	@
 what's	L
 going	V
-on	T
+on	P
 ?	,
 :(	E
 I	O
@@ -533,27 +533,27 @@ you	O
 BRICK	@
 STRONG	!
 .	,
-RIP	#
-EVAN	#
+RIP	^
+EVAN	^
 .	,
 <3	E
 
 RT	~
 @USER_03d1b8b7	@
-#xinnovate	~
-pays	X
+#xinnovate	O
+pays	V
 the	D
 cost	V
 of	P
-developer	$
-breakfast	M
-back	A
+developer	D
+breakfast	A
+back	N
 to	P
-feed	$
-100,000	M
-children	A
+feed	D
+100,000	A
+children	N
 through	P
-WeFeedback	$
+WeFeedback	,
 
 Beat	^
 Fable	^
@@ -568,13 +568,13 @@ be	V
 a	D
 bit	N
 more	R
-extreme	E
+extreme	,
 
 New	A
 tweetaway	N
 !	,
 Follow	V
-@USER_96c8a1d3	T
+@USER_96c8a1d3	O
 &	&
 RT	V
 to	P
@@ -607,8 +607,8 @@ to	P
 definition	N
 of	P
 lil	A
-webbies	G
-i-n-d-e-p-e-n-d-e-n-t	G
+webbies	N
+i-n-d-e-p-e-n-d-e-n-t	,
 -->	G
 do	V
 you	O
@@ -617,8 +617,8 @@ what	O
 means	V
 man	N
 ???	,
-«	G
-Ayyye	G
+«	~
+Ayyye	@
 !	,
 
 I	O
@@ -628,7 +628,7 @@ something	N
 tonight	N
 .	,
 
-@USER_32dce16c	M
+@USER_32dce16c	O
 looking	V
 for	P
 the	D
@@ -664,9 +664,9 @@ too	R
 strong	A
 ...	,
 so	R
-imma	#
-n…	#
-http://lnk.ms/DcpY6	#
+imma	A
+n…	N
+http://lnk.ms/DcpY6	,
 
 @USER_139a41e9	@
 yea	!
@@ -740,12 +740,12 @@ Sugary	@
 Drinks	~
 May	^
 Raise	G
-Diabetes	G
-Risk	G
+Diabetes	~
+Risk	@
 :	~
 http://bit.ly/cTwLpF	@
 via	P
-@USER_71539f64	$
+@USER_71539f64	,
 
 Amelllll	!
 !!	,
@@ -757,8 +757,8 @@ RT	~
 :	~
 I	O
 don't	V
-mind	V
-..:	T
+mind	A
+..:	N
 (	,
 ..	,
 RT	~
@@ -773,30 +773,30 @@ face	N
 again	R
 (¬_¬	A
 "	,
-)	E
-http://myloc.me/dwFZo	E
+)	,
+http://myloc.me/dwFZo	U
 
 1895	@
 O	!
-VF20	#
-ANACS	#
-SILVER	#
-Morgan	$
-Dollar	M
+VF20	O
+ANACS	V
+SILVER	O
+Morgan	V
+Dollar	D
 NEW	A
-ORLEANS	G
-COIN	G
-:	~
+ORLEANS	N
+COIN	N
+:	,
 US	^
-$	G
-465.00	G
+$	,
+465.00	!
 (	,
 0	$
 Bid	N
 )	,
 End	^
-Date	G
-:	~
+Date	^
+:	,
 Tuesday…	#
 http://bit.ly/kKth4	#
 
@@ -810,18 +810,18 @@ glam	^
 (	,
 
 A	D
-truly	S
+truly	A
 Innovative	A
 way	N
 to	P
 Michael	^
 Owen	^
-.:	$
-Manchester	M
-Uniteds	A
+.:	^
+Manchester	P
+Uniteds	D
 injury	N
 plagued	P
-striker	Z
+striker	^
 Michael	^
 Owen	^
 looks	V
@@ -832,7 +832,7 @@ miss	N
 http://bit.ly/9oLnZy	U
 
 So	P
-Glee	X
+Glee	O
 was	V
 cute	A
 .	,
@@ -848,12 +848,12 @@ fabulous	T
 KOBE	^
 WILL	V
 BE	V
-MVP	T
+MVP	P
 THIS	D
 YEAR	N
 
-@USER_8502bff9	~
-benadryl	X
+@USER_8502bff9	@
+benadryl	O
 is	V
 your	D
 friend	N
@@ -863,13 +863,13 @@ Journalists	@
 and	&
 Social	^
 Media	N
-experts	$
-alike	M
+experts	P
+alike	O
 will	V
-appreciate	T
+appreciate	P
 this	D
 spoof	N
-out	T
+out	P
 of	P
 Dallas	@
 :	~
@@ -880,12 +880,12 @@ go	V
 Lakers	^
 
 #teamlakers	^
-ya'll	Z
+ya'll	,
 ready	A
 ??	,
 :)	E
 
-@USER_2eb14b84	E
+@USER_2eb14b84	@
 -_-	E
 a	D
 hole	N
@@ -908,12 +908,12 @@ Your	D
 World	N
 Too	R
 on	P
-Black	Z
+Black	^
 Friday	^
-http://bit.ly/bAaiwf	U
+http://bit.ly/bAaiwf	,
 
 Im	L
-Bout	R
+Bout	V
 to	P
 eat	V
 something	N
@@ -929,10 +929,10 @@ satisfied	N
 with	P
 in	P
 their	D
-trade	S
+trade	A
 show	N
 display	V
-http://ow.ly/30d3P	#
+http://ow.ly/30d3P	,
 #exhbiting	#
 #tradeshow	#
 #eventprofs	#
@@ -958,10 +958,10 @@ maybe	R
 you'll	L
 pay	V
 better	R
-attention	E
+attention	,
 
-#HarryPotter	M
-Marathon	A
+#HarryPotter	O
+Marathon	V
 while	P
 I	O
 write	V
@@ -976,13 +976,13 @@ flickr	N
 ..	,
 just	R
 thought	V
-id	T
-re-share	P
+id	O
+re-share	V
 my	D
-fave	S
+fave	A
 pic	N
 of	P
-@USER_c1860bde	$
+@USER_c1860bde	N
 from	P
 toronto	D
 warped	N
@@ -990,10 +990,10 @@ warped	N
 http://flic.kr/p/8hxhBL	E
 <3	E
 
-@USER_87ee5f65	#
-Tyra	#
-mail	#
-...	,
+@USER_87ee5f65	@
+Tyra	~
+mail	@
+...	~
 how	R
 r	V
 u	O
@@ -1004,10 +1004,10 @@ RT	~
 :	~
 When	R
 life	N
-gives	&
+gives	P
 you	O
 a	D
-hundred	S
+hundred	A
 reasons	N
 to	P
 cry	V
@@ -1033,7 +1033,7 @@ RT	~
 :	~
 It's	L
 like	P
-wherever	Z
+wherever	^
 LeBron	^
 goes	V
 ,	,
@@ -1054,15 +1054,15 @@ kind	N
 of	P
 disease	N
 or	&
-somet	$
+somet	N
 ...	,
 
-@USER_fbc9707d	S
+@USER_fbc9707d	A
 hell	N
 yea	!
 
 RT	~
-@USER_2378edff	X
+@USER_2378edff	@
 Our	D
 time	N
 is	V
@@ -1072,10 +1072,10 @@ Support	V
 women	N
 as	P
 full	A
-peacemaking	&
-partners	$
+peacemaking	N
+partners	N
 .	,
-#Make1325real	U
+#Make1325real	^
 &	&
 sign	V
 the	D
@@ -1083,10 +1083,10 @@ petition	N
 :	,
 http://bit.ly/b0Rakg	U
 
-@USER_889e2021	M
+@USER_889e2021	L
 Good	A
 Morning	N
-Mikey	&
+Mikey	P
 Baby	N
 :D	E
 lol	!
@@ -1094,14 +1094,14 @@ lol	!
 *	,
 hugs	N
 &	&
-kisses	L
+kisses	V
 ya	D
 cheek	N
 *	,
 
-BANGTIMEEEEEEEEEEEEEEEEEEEE	#
+BANGTIMEEEEEEEEEEEEEEEEEEEE	!
 
-Nothin	M
+Nothin	L
 new	A
 in	P
 my	D
@@ -1110,15 +1110,15 @@ RT	~
 @USER_ae04c9af	@
 When	R
 he's	L
-stroking	R
+stroking	V
 in	P
 &	&
-out	R
+out	N
 ...	,
-Tighten	Y
+Tighten	V
 ya	D
 pussy	N
-muscles	&
+muscles	,
 when	R
 he's	L
 goin	V
@@ -1143,10 +1143,10 @@ head	N
 "	,
 
 @USER_6a789d59	@
-GETS	~
-ON	X
+GETS	O
+ON	V
 MY	D
-MF	S
+MF	A
 LAST	A
 NERVES	N
 BUT	&
@@ -1154,12 +1154,12 @@ I	O
 DEAL	V
 WIT	P
 IT	O
-#DEALWITHIT	E
-BIG	E
-HEAD	E
+#DEALWITHIT	V
+BIG	,
+HEAD	U
 
-@USER_e123c1ae	E
-funnn	E
+@USER_e123c1ae	@
+funnn	!
 ;)	E
 haha	!
 
@@ -1179,8 +1179,8 @@ Most	A
 of	P
 these	D
 article	N
-submission	$
-engines	M
+submission	P
+engines	O
 have	V
 these	D
 stupid	A
@@ -1188,9 +1188,9 @@ stock	N
 photos	N
 for	P
 "	,
-Author	$
-Pics	M
-,"	A
+Author	L
+Pics	A
+,"	N
 but	&
 this	D
 one	N
@@ -1204,8 +1204,8 @@ http://bit.ly/dCzh3o	U
 Bad	A
 day	N
 
-HIGHHHHHH	E
-@USER_c47142c2	E
+HIGHHHHHH	@
+@USER_c47142c2	!
 :)	E
 
 "	,
@@ -1254,12 +1254,12 @@ to	P
 real	A
 life	N
 :	,
-picking	L
+picking	V
 up	T
-Camp	P
-Kern	$
-fundraiser	M
-pizzas	A
+Camp	D
+Kern	N
+fundraiser	P
+pizzas	D
 tonight	N
 ,	,
 hoping	V
@@ -1267,10 +1267,10 @@ to	P
 start	V
 on	P
 bathroom	N
-tile	&
+tile	P
 tomorrow	N
 and	&
-laundry	$
+laundry	N
 ...	,
 always	R
 laundry	A
@@ -1293,10 +1293,10 @@ doorstep	N
 so	P
 I	O
 guess	V
-they’re	T
+they’re	P
 all	D
 in	P
-gangs	L
+gangs	O
 now	R
 .	,
 
@@ -1319,7 +1319,7 @@ but	&
 then	R
 I	O
 get	V
-soaked	T
+soaked	O
 when	R
 I	O
 walk	V
@@ -1329,14 +1329,14 @@ outside	R
 Andrew	^
 -	,
 check	V
-out	T
+out	P
 more	A
 tracks	N
 from	P
 the	D
-upcoming	$
-@USER_f01b72cf	M
-albums	A
+upcoming	N
+@USER_f01b72cf	P
+albums	^
 :	,
 http://ping.fm/fKS2z	V
 &	V
@@ -1348,20 +1348,20 @@ This	D
 week	N
 only	R
 .	,
-Order	$
+Order	D
 staff	N
 from	P
 Open	^
 .	,
-ph	U
+ph	^
 and	&
 get	V
-2	$
-months	M
+2	P
+months	D
 free	A
 .	,
-Offer	L
-valid	R
+Offer	O
+valid	V
 until	P
 November	^
 5th	^
@@ -1370,7 +1370,7 @@ http://nblo.gs/9IO4o	,
 
 man	N
 for	P
-petesakes	X
+petesakes	O
 scratchh	V
 that	D
 sweepstakesss	N
@@ -1383,7 +1383,7 @@ grind	^
 ugh	!
 !!	,
 
-Macdonalds	M
+Macdonalds	O
 are	V
 #cheapasses	P
 I	O
@@ -1405,7 +1405,7 @@ I	O
 asked	V
 for	P
 little	A
-ill	&
+ill	N
 probably	R
 get	V
 a	D
@@ -1418,7 +1418,7 @@ RT	~
 @USER_8a7a8fcf	@
 :	~
 The	D
-Red	S
+Red	A
 Bandana	N
 :	,
 An	D
@@ -1443,17 +1443,17 @@ you	O
 
 This	D
 nigga	N
-walter	&
+walter	R
 sad	A
 yaw	N
 ..	,
 ahahaa	U
 
-@USER_84be09fe	M
+@USER_84be09fe	O
 would	V
 be	V
 so	R
-proud	A
+proud	V
 of	P
 me	O
 right	R
@@ -1464,15 +1464,15 @@ now	R
 @USER_cbb2f0dc	@
 nerp	!
 !	,
-Wish	&
+Wish	!
 I	O
 could	V
 
-Spending	X
+Spending	V
 the	D
 day	N
-withhh	,
-mommma	!
+withhh	P
+mommma	^
 !	,
 
 momma's	~
@@ -1480,46 +1480,46 @@ bringing	@
 me	O
 food	N
 from	P
-sakura	G
-YEEEE	U
+sakura	^
+YEEEE	,
 
-Tanger	S
+Tanger	A
 Outlet	N
-Centers	G
-Announces	G
-Expanded	$
-Technology	M
-Advances	A
+Centers	P
+Announces	O
+Expanded	V
+Technology	D
+Advances	N
 and	&
 Social	^
 Media	N
 ...	,
--	G
-MarketWatch	G
+-	,
+MarketWatch	!
 (	,
-press	$
+press	D
 release	N
 )	,
 http://sns.ly/oIV55	U
 
-Indiana	@
-Jones	~
-Movies	X
+Indiana	~
+Jones	@
+Movies	O
 Get	V
 3D	D
 Treatment	N
 &	&
-Re-Release	$
+Re-Release	N
 :	,
-Following	L
+Following	V
 up	T
 on	P
 George	D
 Lucas	N
 '	,
-decision	L
+decision	V
 to	P
-re-release	X
+re-release	V
 the	D
 Star	N
 ...	,
@@ -1530,7 +1530,7 @@ RT	~
 :	~
 out	R
 of	P
-all	X
+all	D
 your	D
 lies	N
 ,	,
@@ -1541,14 +1541,14 @@ you	O
 "	,
 was	V
 my	D
-favorite	A
+favorite	N
 .	,
 #factsaboutboys	U
 
 Follow	V
-=>	$
-@USER_cee9f03f	M
-Attack	A
+=>	O
+@USER_cee9f03f	V
+Attack	D
 Attack	N
 !	,
 Indonesia	^
@@ -1565,8 +1565,8 @@ but	&
 never	R
 late	R
 is	V
-better	R
--Drake	E
+better	A
+-Drake	N
 <3	E
 
 @USER_5f70d90e	@
@@ -1580,7 +1580,7 @@ my	D
 fault	N
 .	,
 
-Debating	L
+Debating	@
 if	P
 i	O
 should	V
@@ -1597,8 +1597,8 @@ just	R
 chill	N
 hmmm	N
 ..	,
-decisions	#
-decisions	#
+decisions	^
+decisions	^
 .	,
 
 RT	~
@@ -1607,8 +1607,8 @@ RT	~
 d-town	@
 !	,
 
-Dear	S
-Wednesday	N
+Dear	^
+Wednesday	^
 afternoon	N
 nap	N
 please	V
@@ -1622,8 +1622,8 @@ need	V
 of	P
 you	O
 
-Yall	~
-sholl	X
+Yall	@
+sholl	O
 is	V
 quiet	T
 !!	,
@@ -1648,8 +1648,8 @@ fine	A
 
 I	O
 can	V
-usually	T
-handle	P
+usually	O
+handle	V
 the	D
 heat	^
 .	,
@@ -1657,7 +1657,7 @@ The	D
 day	N
 of	P
 the	D
-Dallas	S
+Dallas	A
 show	N
 I	O
 was	V
@@ -1672,7 +1672,7 @@ get	V
 comfortable	A
 .	,
 
-@USER_ca38b0a1	M
+@USER_ca38b0a1	L
 Few	A
 weeks	N
 ago	R
@@ -1681,7 +1681,7 @@ told	V
 me	O
 that	D
 La	G
-Tapatia	G
+Tapatia	O
 has	V
 '	,
 em	O
@@ -1761,12 +1761,12 @@ Zoiks	@
 Online	A
 -	,
 An	D
-entertainingly	S
+entertainingly	A
 hum	N
 ..	,
 http://bit.ly/9kmLkS	U
 
-Its	L
+Its	D
 time	N
 to	P
 make	V
@@ -1776,8 +1776,8 @@ changes	N
 
 Nike	!
 ,	,
-horrible	#
-ad	#
+horrible	^
+ad	^
 !	,
 Very	R
 smug	A
@@ -1789,7 +1789,7 @@ u	O
 been	V
 at	P
 !!	,
-Txt	&
+Txt	!
 me	O
 !!	,
 RT	~
@@ -1798,7 +1798,7 @@ RT	~
 It's	L
 show	N
 off	P
-Tuesday	$
+Tuesday	N
 cuz	P
 no	D
 work	N
@@ -1817,10 +1817,10 @@ Find	V
 out	T
 How	R
 to	P
-Tap	X
+Tap	O
 Into	V
 Your	D
-True	S
+True	A
 Potential	N
 .	,
 http://bit.ly/aguPgx	U
@@ -1835,11 +1835,11 @@ Series	^
 !	,
 Go	V
 Rangers	^
-!!!!!!!!!	G
+!!!!!!!!!	,
 http://fb.me/D2LsXBJx	U
 
-@USER_1f51becd	$
-nothin	M
+@USER_1f51becd	@
+nothin	L
 much	A
 ...	,
 how	R
@@ -1865,9 +1865,9 @@ is	V
 looking	V
 for	P
 a	D
-Senior	$
-Creative	M
-Director	A
+Senior	A
+Creative	N
+Director	N
 to	P
 lea	^
 ...	,
@@ -1878,7 +1878,7 @@ RT	~
 @USER_5b81aa6b	@
 :	~
 George	@
-Soros	X
+Soros	O
 wants	V
 to	P
 legalize	D
@@ -1888,7 +1888,7 @@ I	O
 guess	V
 he's	L
 so	R
-rich	A
+rich	V
 that	P
 he's	L
 completely	R
@@ -1901,7 +1901,7 @@ to	P
 buy	V
 .	,
 
-@USER_9ee000b5	L
+@USER_9ee000b5	@
 where	R
 the	D
 fuck	N
@@ -1914,17 +1914,17 @@ RT	~
 @USER_3e5d8635	@
 :	~
 My	D
-2nd	S
-book	N
-Straight	&
+2nd	N
+book	V
+Straight	O
 Talk	V
 No	D
 Chaser	N
 ,	,
 has	V
-limited	$
-autographed	M
-copies	A
+limited	P
+autographed	D
+copies	N
 from	P
 me	O
 ,	,
@@ -1949,9 +1949,9 @@ European	^
 officials	^
 criticize	^
 U.S.	^
-#airport	$
-security	M
-measures	A
+#airport	^
+security	^
+measures	^
 -	,
 http://newzfor.me/?9424	!
 [	,
@@ -1961,7 +1961,7 @@ it	O
 http://bit.ly/aabJGK	!
 ]	,
 
-@USER_fb8c3da6	S
+@USER_fb8c3da6	A
 morning	N
 <3	E
 
@@ -1983,7 +1983,7 @@ right	R
 See	V
 you	O
 at	P
-10:45	$
+10:45	,
 
 Uhm	!
 ??	,
@@ -1997,8 +1997,8 @@ lettters	N
 in	P
 words	N
 and	&
-overexcsesive	L
-puncutatoin	R
+overexcsesive	D
+puncutatoin	N
 .	,
 Yo're	L
 welcome	A
@@ -2015,13 +2015,13 @@ English	T
 RT	~
 @USER_d8c71643	@
 :	~
-LegitMileyC	X
-10:55	D
+LegitMileyC	@
+10:55	A
 pm	N
-ಠ◡ಠ	E
+ಠ◡ಠ	,
 
 @USER_8c29cf88	@
-TJ	S
+TJ	A
 thanks	N
 now	R
 I	O
@@ -2032,11 +2032,11 @@ in	P
 my	D
 head	N
 and	&
-visions	$
+visions	N
 of	P
 my	D
-80s	S
-younger	A
+80s	A
+younger	N
 self	N
 dancing	N
 to	P
@@ -2047,8 +2047,8 @@ Haha	!
 My	D
 producer	N
 said	V
-UV	$
-vodka	M
+UV	P
+vodka	O
 is	V
 a	D
 bad	A
@@ -2082,9 +2082,9 @@ forgot	V
 just	R
 how	R
 good	A
-Molson	&
-Golden	$
-truly	M
+Molson	N
+Golden	P
+truly	O
 is	V
 ......	,
 Thanks	N
@@ -2096,7 +2096,7 @@ lil	A
 girl	N
 got	V
 some	D
-unnecessary	S
+unnecessary	A
 tattoos	N
 but	&
 the	D
@@ -2128,7 +2128,7 @@ that	P
 mean	V
 ?	,
 It	O
-warm't	R
+warm't	V
 sposed	A
 to	P
 be	V
@@ -2149,8 +2149,8 @@ HA	!
 AHA	!
 !!!!!	,
 YOU	O
-SO	R
-NASTY	A
+SO	V
+NASTY	D
 !!!!!!!..	N
 BUT	&
 I	O
@@ -2195,8 +2195,8 @@ in	P
 a	D
 comb	N
 over	P
-fashion	L
-more	R
+fashion	D
+more	A
 often	R
 .	,
 I	O
@@ -2210,12 +2210,12 @@ i	O
 swear	V
 i	O
 havent	V
-checked	T
+checked	P
 my	D
-facebook	S
+facebook	A
 messages	N
 in	P
-like	P
+like	V
 2/3	D
 weeks	N
 lol	!
@@ -2226,7 +2226,7 @@ spam	N
 !	,
 
 Just	R
-found	A
+found	V
 out	P
 who's	L
 been	V
@@ -2249,7 +2249,7 @@ bitch	N
 get	V
 the	D
 fuck	N
-outta	&
+outta	,
 here	R
 !	,
 lmao	!
@@ -2279,20 +2279,20 @@ bra	N
 .	,
 LMAO	!
 .	,
-Funniest	E
-ish	E
+Funniest	!
+ish	,
 I've	L
 seen	V
 all	D
 day	N
 .	,
 
-american	M
-airlines	A
-discounts	N
+american	@
+airlines	O
+discounts	V
 from	P
-sta	G
-http://www.bestcouponfor.com/coupon/266684.aspx	U
+sta	^
+http://www.bestcouponfor.com/coupon/266684.aspx	,
 
 well	R
 that	P
@@ -2305,12 +2305,12 @@ hahahahhaa	!
 Did	V
 a	D
 lil	A
-cleaning	,
-Around	Y
+cleaning	N
+Around	P
 the	D
 house	N
 .	,
-Took	Y
+Took	V
 a	D
 nice	A
 HOT	A
@@ -2345,12 +2345,12 @@ Breshears	!
 Jeff	^
 Otero	^
 and	&
-Cathy	$
-Hutchison	M
+Cathy	V
+Hutchison	O
 are	V
 speaking	V
 at	P
-#WFX	$
+#WFX	N
 in	P
 Atlanta	^
 next	A
@@ -2379,7 +2379,7 @@ hate	V
 the	D
 #celtics	N
 
-@USER_bf65cfa4	X
+@USER_bf65cfa4	V
 that	D
 good	A
 times	N
@@ -2390,7 +2390,7 @@ hilarious	A
 
 @USER_10082006	@
 hahaha	!
-that	O
+that	P
 happened	V
 last	A
 time	N
@@ -2404,7 +2404,7 @@ yelling	V
 '	,
 its	L
 fan	N
-appreciation	&
+appreciation	P
 day	N
 !'	P
 Over	^
@@ -2413,22 +2413,22 @@ over	O
 and	&
 over	O
 .	,
-Epic	#
-fail	#
+Epic	^
+fail	^
 .	,
 
 the	D
 blog	N
-updates	G
-begin	G
-...	~
+updates	P
+begin	^
+...	,
 http://fb.me/KCCi1JuT	U
 
 RT	~
 @USER_c64f7f66	@
 :	~
 @USER_b279fda7	@
-Forget	X
+Forget	!
 that	D
 !	,
 I'm	L
@@ -2444,17 +2444,17 @@ May	^
 of	P
 2011	$
 !!!!	,
-Hell	L
+Hell	V
 to	P
 the	D
 yes	!
 !!!	,
 #AmericaLovesKylie	U
 
-Inspired	L
+Inspired	@
 after	P
 a	D
-yummy	S
+yummy	A
 lunch	N
 with	P
 @USER_2321b5f2	^
@@ -2465,12 +2465,12 @@ Thanks	N
 RT	~
 @USER_0805bd4c	@
 :	~
-4	$
+4	P
 incredible	A
 wines	N
 from	P
-Kermit	$
-Lynch	M
+Kermit	D
+Lynch	N
 will	V
 be	V
 poured	D
@@ -2495,9 +2495,9 @@ right-FREE	T
 
 Just	R
 finished	V
-reorganizing	T
+reorganizing	P
 my	D
-external	S
+external	A
 hard	A
 drives	N
 .	,
@@ -2510,19 +2510,19 @@ refreshing	A
 RT	~
 @USER_7d7b5b4e	@
 :	~
-Pantone	X
+Pantone	@
 is	V
 pleased	T
 to	P
-announce	X
+announce	V
 the	D
 PLUS	^
 Series	^
-http://www.pantone.com/plus	$
+http://www.pantone.com/plus	^
 for	P
 designers	^
 and	&
-printers	$
+printers	N
 .	,
 
 I	O
@@ -2562,19 +2562,19 @@ http://tinyurl.com/2dt3o7n	U
 lol	!
 ?	,
 
-http://tiny.cc/kdlmf	#
+http://tiny.cc/kdlmf	!
 
-Bet	L
+Bet	@
 on	P
-sports	$
+sports	N
 with	P
 this	D
-sure-money	S
+sure-money	A
 system	N
 .	,
 Win	V
 over	P
-90%	$
+90%	N
 of	P
 your	D
 bets	N
@@ -2587,18 +2587,18 @@ handle	V
 the	D
 quirk	N
 ?	,
-— launch	L
+— launch	V
 of	P
 '	,
-Native	L
-Trees	R
+Native	O
+Trees	V
 of	P
 Canada	^
 '	,
 by	P
-Leanne	Z
-Shapton	G
-:	~
+Leanne	D
+Shapton	N
+:	,
 http://j.mp/9nho0l	U
 
 RT	~
@@ -2615,7 +2615,7 @@ followers	N
 try	V
 to	P
 suppress	D
-curbstomping	S
+curbstomping	A
 video	N
 http://t.co/Ft6P05z	N
 [	,
@@ -2628,7 +2628,7 @@ http://bit.ly/aH0QX3	!
 I	O
 wanna	V
 see	V
-#drake	T
+#drake	O
 and	&
 #llcoolj	O
 do	V
@@ -2655,25 +2655,25 @@ I	O
 kid	N
 you	O
 not	R
-107.5	E
+107.5	,
 
 Always	R
-caring	L
+caring	V
 bout	R
 other	A
-muhfckers	,
-feelings	U
+muhfckers	N
+feelings	,
 
-Figurative	S
+Figurative	A
 speech	N
-#Englishmajors	&
+#Englishmajors	P
 help	V
 me	O
 out	T
 :	,
 "	,
-Twenty	$
-sails	M
+Twenty	!
+sails	O
 came	V
 into	P
 the	D
@@ -2681,7 +2681,7 @@ harbor	N
 "	,
 is	V
 an	D
-example	S
+example	A
 of_____________	N
 ?	,
 What	O
@@ -2693,9 +2693,9 @@ Oh	!
 don't	V
 get	V
 it	O
-twisted	T
+twisted	V
 ,	,
-imma	Y
+imma	V
 a	D
 big	A
 boy	N
@@ -2707,10 +2707,10 @@ jokes	N
 !	,
 I	O
 go	V
-in	T
+in	P
 on	P
 a	D
-Goober	S
+Goober	A
 quickly	N
 !!	,
 Lol	!
@@ -2718,7 +2718,7 @@ Lol	!
 Cheer	V
 for	P
 the	D
-toronto	S
+toronto	A
 raptors	N
 .	,
 #WhoDoesThat	#
@@ -2734,14 +2734,14 @@ http://nblo.gs/9H1z8	#
 pin	@
 :	~
 22B9FB5D	@
-Add	!
+Add	~
 Me	O
 
 RT	~
-@USER_32a6ae89	X
-Climate	D
-Change	N
-Dispatch	N
+@USER_32a6ae89	@
+Climate	O
+Change	V
+Dispatch	T
 -	,
 A	D
 Challenge	N
@@ -2752,7 +2752,7 @@ Warmists	!
 "	,
 http://bit.ly/bQs9TA	U
 
-@USER_aa556638	M
+@USER_aa556638	O
 Please	V
 confirm	P
 you've	L
@@ -2771,7 +2771,7 @@ I	O
 have	V
 not	R
 heard	V
-back	T
+back	R
 from	P
 you	O
 .	,
@@ -2783,17 +2783,17 @@ RT	~
 :	~
 Want	V
 a	D
-Fool's	$
-Gold	M
-poster	A
+Fool's	N
+Gold	P
+poster	D
 signed	N
 by	P
 Matthew	D
 McConaughey	N
 &	&
 new	A
-Justin	&
-Boots	$
+Justin	N
+Boots	N
 ?	,
 Tweet	V
 #justin50	T
@@ -2807,18 +2807,18 @@ http	U
 ...	,
 
 New	A
-NC	&
-Highway	$
-Signs	M
+NC	N
+Highway	P
+Signs	O
 Welcome	V
 Motorists	T
 To	P
 "	,
 Most	A
-Military	N
-Friendly	P
-State	^
-":	Z
+Military	P
+Friendly	D
+State	N
+":	R
 New	A
 signs	N
 going	V
@@ -2830,25 +2830,25 @@ highways	N
 ...	,
 http://bit.ly/cPNH6e	U
 
-thx	L
+thx	@
 to	P
-@USER_b1b1bf79	X
+@USER_b1b1bf79	O
 check	V
-out	T
+out	P
 http://www.youtube.com/watch?v=IKqYXxl_0Rk	^
 "	,
-Slumber	Y
-Sleepover	D
-Lan	S
-Party	N
+Slumber	O
+Sleepover	V
+Lan	O
+Party	V
 Massacre	^
 "	,
 trailer	N
 
-@USER_57693bb9	M
-@USER_90b0b3c1	A
-@USER_7560b48b	$
-@USER_6a88f354	M
+@USER_57693bb9	@
+@USER_90b0b3c1	~
+@USER_7560b48b	@
+@USER_6a88f354	O
 can	V
 i	O
 have	V
@@ -2861,7 +2861,7 @@ invite	P
 you	O
 to	P
 a	D
-sample	S
+sample	A
 sale	N
 
 lmfaoooooo	~
@@ -2871,13 +2871,13 @@ lmfaoooooo	~
 @USER_79accd00	@
 Let's	L
 say	V
-Darth	$
-Vader	M
+Darth	P
+Vader	O
 was	V
 still	R
 alive	A
 and	&
-all	R
+all	D
 the	D
 Ewoks	N
 were	V
@@ -2887,7 +2887,7 @@ not	R
 to	P
 mention	N
 all	D
-McFly	S
+McFly	A
 fans)	N
 ...	,
 How	R
@@ -2897,10 +2897,10 @@ save	V
 them	O
 ??	,
 
-@USER_1a79b31a	X
+@USER_1a79b31a	V
 the	D
-bBr	$
-aliases	M
+bBr	N
+aliases	P
 don't	V
 add	V
 a	D
@@ -2922,8 +2922,8 @@ Twitter	^
 extension	^
 (	,
 and	&
-extension	L
-behavior	R
+extension	O
+behavior	V
 in	P
 general)	^
 .	,
@@ -2944,15 +2944,15 @@ Cleveland	^
 ???	,
 I	O
 miss	V
-ms.	$
-Jenkins	M
+ms.	P
+Jenkins	O
 being	V
 with	P
 us	O
 everyday	N
-;(	E
+;(	,
 
-#badcombination	X
+#badcombination	V
 any	D
 bitch	N
 born	V
@@ -2962,7 +2962,7 @@ da	D
 &	&
 me	O
 
-@USER_f06b7f74	L
+@USER_f06b7f74	@
 if	P
 they	D
 worse	A

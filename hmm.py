@@ -200,10 +200,10 @@ class SETS:
 			temp += i.count_emis(y, x)
 		return temp
 
-	def estimate_emission_param(self, y, x):
+	def estimate_emission_param(self, y, x, no_new_word):
 		# return self.overall_count_y(y)
 		# print self.overall_count_y_to_x(y, x)
-		return self.overall_count_y_to_x(y, x)/float(self.overall_count_y(y) + 1)
+		return self.overall_count_y_to_x(y, x)/float(self.overall_count_y(y) + no_new_word)
 
 	def size(self):
 		return len(self.hmmset)
@@ -217,12 +217,12 @@ class SETS:
 			result = result and i.is_word_not_exist(x)
 		return result
 
-	def pos_tagger(self, x):
+	def pos_tagger(self, x, no_new_word):
 		maximum = 0
 		y = ""
 		d = {}
 		for i in TAGS:
-			temp = self.estimate_emission_param(i, x)
+			temp = self.estimate_emission_param(i, x, no_new_word)
 			d[i] = temp
 			if temp > maximum:
 				maximum = temp
@@ -257,6 +257,14 @@ class SETS:
 			temp1 += i.count_tran(y, yp)
 			temp2 += i.count_y(y)
 		return float(temp1)/temp2
+
+	def count_new_words(self, word_list):
+		existing_words = self.getwords()
+		counter = 0
+		for i in word_list:
+			if i not in existing_words:
+				counter += 1
+		return counter
 
 
 def readtrain():
@@ -357,14 +365,20 @@ if __name__=="__main__":
 	devoutset = readdevout()
 	pairs = {}
 
+	print "\n###Part 1###\nProcessing:"
+
 	filename = "dev.p1.out"
 	f = open(filename, "w+")
 	counter = 0
 	# print "@USER_44285fcc" in devinset.getwords()
-	for i in devinset.getwords():
-		print counter
+	word_list = devinset.getwords()
+	no_new_word = trainingset.count_new_words(word_list)
+	length = len(word_list)
+	for i in word_list:
+		if counter%(length/10) == (length/10)-1:
+			print ".",
 		counter += 1
-		pairs[i] = trainingset.pos_tagger(i)
+		pairs[i] = trainingset.pos_tagger(i, no_new_word)
 	devin = open(os.path.dirname(os.path.realpath(__file__)) + "\\dev.in").read()
 	# print pairs
 	for i in devin.split("\n\n"):
@@ -374,8 +388,8 @@ if __name__=="__main__":
 			f.write(j + "\t" + pairs[j] + "\n")
 		f.write("\n")
 	f.close()
-	# print readdevoutp1().get_accuracy(readdevout())
-	print EMISS_PARAM.keys()
+	print "\nAccuracy:" + str(readdevoutp1().get_accuracy(devoutset))
+	# print EMISS_PARAM.keys()
 
 	# Generate TRANS PARAMS
 	for i in TAGS:
@@ -390,9 +404,9 @@ if __name__=="__main__":
 	# print TRANS_PARAM_SS[TAGS_INDEX["@"]]
 	# print "emis"
 	# print EMISS_PARAM["Yeah"]["!"]
-	print "trans"
+	# print "trans"
 	# print TRANS_PARAM[TAGS_INDEX["#"]]
-	print TRANS_PARAM_SS[TAGS_INDEX["#"]]
+	# print TRANS_PARAM_SS[TAGS_INDEX["#"]]
 	# print TRANS_PARAM[TAGS_INDEX["#"]]
 
 	# print "here"
@@ -402,17 +416,22 @@ if __name__=="__main__":
 	# print devinset.get_hmmset()[88].gettags() 
 
 	# devinset.get_hmmset()[0].viterbi()
+
+	print "\n###Part 2###\nProcessing:"
 	
 	filename = "dev.p2.out"
 	f = open(filename, "w+")
 	counter = 0
+	length = len(devinset.get_hmmset())
 	for i in devinset.get_hmmset():
-		print counter
+		# print counter
+		if counter%(length/10) == (length/10)-1:
+			print ".",
 		counter += 1
 		i.viterbi()
 		i.write_to_file(f)
 	f.close()
 	# devoutsetp2 = readdevout("\\dev.p2.out")
-	print devinset.get_accuracy(devoutset)
+	print "\nAccuracy:" + str(devinset.get_accuracy(devoutset))
 
 	# Generate EMIS PARAMS

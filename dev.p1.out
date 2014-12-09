@@ -44,7 +44,7 @@ its	L
 degrees	Y
 
 @USER_341450c3	Y
-no	!
+no	D
 one	$
 cares	V
 .	,
@@ -147,7 +147,7 @@ http://bit.ly/bZiTd2	Y
 remember	V
 !	,
 if	P
-ur	L
+ur	D
 in	P
 htown	Y
 or	&
@@ -162,7 +162,7 @@ to	P
 the	D
 drag	Y
 show	N
-@	G
+@	P
 2020	Y
 !	,
 join	V
@@ -373,7 +373,7 @@ Lindt	Y
 Truffles	Y
 (	,
 US	^
-)	E
+)	,
 http://nblo.gs/9Iuzw	Y
 
 Pretty	Y
@@ -408,7 +408,7 @@ Scopa	Y
 (	,
 109A	Y
 Plaza	Y
-St.	G
+St.	^
 ,	,
 Healdsburg	Y
 Ave	^
@@ -438,7 +438,7 @@ Fit	Y
 http://bit.ly/ce5Nvw	Y
 (	,
 Ad	Y
-)	E
+)	,
 
 @USER_cbcd21b7	Y
 on	P
@@ -547,7 +547,7 @@ cost	V
 of	P
 developer	Y
 breakfast	Y
-back	T
+back	R
 to	P
 feed	Y
 100,000	Y
@@ -613,11 +613,11 @@ i-n-d-e-p-e-n-d-e-n-t	Y
 do	V
 you	O
 know	V
-what	X
+what	O
 means	V
 man	N
 ???	,
-«	G
+«	~
 Ayyye	Y
 !	,
 
@@ -625,7 +625,7 @@ I	O
 wanna	V
 do	V
 something	N
-tonight	R
+tonight	N
 .	,
 
 @USER_32dce16c	Y
@@ -653,7 +653,7 @@ us	O
 u	O
 can	V
 try	V
-all	X
+all	D
 u	O
 want	V
 to	P
@@ -683,7 +683,7 @@ have	V
 ,	,
 they	O
 have	V
-no	!
+no	D
 answer	Y
 for	P
 him	O
@@ -773,7 +773,7 @@ face	N
 again	R
 (¬_¬	Y
 "	,
-)	E
+)	,
 http://myloc.me/dwFZo	Y
 
 1895	Y
@@ -793,7 +793,7 @@ $	G
 (	,
 0	$
 Bid	Y
-)	E
+)	,
 End	^
 Date	Y
 :	~
@@ -1260,7 +1260,7 @@ Camp	Y
 Kern	Y
 fundraiser	Y
 pizzas	Y
-tonight	R
+tonight	N
 ,	,
 hoping	V
 to	P
@@ -1294,7 +1294,7 @@ so	R
 I	O
 guess	V
 they’re	Y
-all	X
+all	D
 in	P
 gangs	Y
 now	R
@@ -1327,7 +1327,7 @@ outside	R
 !!	,
 
 Andrew	^
--	G
+-	,
 check	V
 out	T
 more	A
@@ -1399,7 +1399,7 @@ they	O
 give	V
 me	O
 2	$
-what	X
+what	O
 if	P
 I	O
 asked	V
@@ -1421,11 +1421,11 @@ The	D
 Red	Y
 Bandana	Y
 :	~
-An	&
+An	D
 Argument	Y
 for	P
 Walking	Y
--	G
+-	,
 TribLocal	Y
 http://bit.ly/aGPvOi	Y
 
@@ -1494,12 +1494,12 @@ and	&
 Social	^
 Media	N
 ...	~
--	G
+-	,
 MarketWatch	Y
 (	,
 press	Y
 release	N
-)	E
+)	,
 http://sns.ly/oIV55	Y
 
 Indiana	Y
@@ -1530,7 +1530,7 @@ RT	~
 :	~
 out	T
 of	P
-all	X
+all	D
 your	D
 lies	Y
 ,	,
@@ -1718,7 +1718,7 @@ so	R
 let	V
 me	O
 know	V
--	G
+-	,
 I'd	L
 love	V
 to	P
@@ -1729,7 +1729,7 @@ me	O
 or	&
 send	V
 an	D
-@	G
+@	P
 reply	Y
 &	&
 let's	L
@@ -1746,7 +1746,7 @@ Lambert	Y
 or	&
 Lady	^
 Gaga	^
-;	G
+;	,
 who	O
 has	V
 the	D
@@ -1759,8 +1759,8 @@ POLL	Y
 Zoiks	Y
 !	,
 Online	A
--	G
-An	&
+-	,
+An	D
 entertainingly	Y
 hum	Y
 ..	,
@@ -1800,7 +1800,7 @@ show	N
 off	T
 Tuesday	Y
 cuz	P
-no	!
+no	D
 work	N
 Wednesday	^
 for	P
@@ -1952,7 +1952,7 @@ U.S.	^
 #airport	Y
 security	Y
 measures	Y
--	G
+-	,
 http://newzfor.me/?9424	Y
 [	,
 Like	P
@@ -2093,7 +2093,7 @@ O	!
 
 This	D
 lil	A
-girl	S
+girl	N
 got	V
 some	D
 unnecessary	Y
@@ -2194,7 +2194,7 @@ hair	N
 in	P
 a	D
 comb	Y
-over	T
+over	P
 fashion	Y
 more	A
 often	R
@@ -2221,7 +2221,7 @@ weeks	N
 lol	!
 ...	~
 its	L
-all	X
+all	D
 spam	Y
 !	,
 
@@ -2238,7 +2238,7 @@ hangin	Y
 up	T
 ,	,
 and	&
-all	X
+all	D
 i	O
 have	V
 to	P
@@ -2269,7 +2269,7 @@ of	P
 me	O
 tryna	V
 jump	V
-over	T
+over	P
 a	D
 puddle	Y
 .	,
@@ -2283,7 +2283,7 @@ Funniest	Y
 ish	Y
 I've	L
 seen	V
-all	X
+all	D
 day	N
 .	,
 
@@ -2409,9 +2409,9 @@ day	N
 !'	Y
 Over	Y
 and	&
-over	T
+over	P
 and	&
-over	T
+over	P
 .	,
 Epic	Y
 fail	Y
@@ -2465,7 +2465,7 @@ Thanks	N
 RT	~
 @USER_0805bd4c	Y
 :	~
-4	$
+4	P
 incredible	A
 wines	Y
 from	P
@@ -2542,7 +2542,7 @@ in	P
 only	A
 boxers	Y
 ,	,
-what	X
+what	O
 happens	Y
 when	R
 this	D
@@ -2573,7 +2573,7 @@ sure-money	Y
 system	Y
 .	,
 Win	V
-over	T
+over	P
 90%	Y
 of	P
 your	D
@@ -2742,7 +2742,7 @@ RT	~
 Climate	Y
 Change	N
 Dispatch	Y
--	G
+-	,
 A	D
 Challenge	Y
 to	P
@@ -2771,7 +2771,7 @@ I	O
 have	V
 not	R
 heard	V
-back	T
+back	R
 from	P
 you	O
 .	,
@@ -2865,7 +2865,7 @@ sample	Y
 sale	N
 
 lmfaoooooo	Y
-@	G
+@	P
 #heats	Y
 
 @USER_79accd00	@
@@ -2877,7 +2877,7 @@ was	V
 still	R
 alive	A
 and	&
-all	X
+all	D
 the	D
 Ewoks	Y
 were	V
@@ -2886,7 +2886,7 @@ prisoners	Y
 not	R
 to	P
 mention	N
-all	X
+all	D
 McFly	Y
 fans)	Y
 ...	~
