@@ -21,13 +21,13 @@ at	P
 lol	!
 let	V
 me	O
-visit	V
+visit	Y
 
 Does	V
 it	O
 feel	V
 like	P
-Summer	N
+Summer	Y
 to	P
 you	O
 ?	,
@@ -147,7 +147,7 @@ http://bit.ly/bZiTd2	Y
 remember	V
 !	,
 if	P
-ur	D
+ur	L
 in	P
 htown	Y
 or	&
@@ -157,19 +157,19 @@ weekend	N
 ,	,
 we	O
 are	V
-headed	V
+headed	Y
 to	P
 the	D
 drag	Y
 show	N
-@	P
+@	G
 2020	Y
 !	,
 join	V
 us	O
 !	,
 
-Man	N
+Man	!
 ,	,
 Heat	^
 need	V
@@ -181,7 +181,7 @@ court	N
 
 Ignite	Y
 to	P
-Write	V
+Write	Y
 :	~
 This	D
 Photo	N
@@ -286,7 +286,7 @@ wage	Y
 .	,
 
 @USER_d37a61e8	Y
-Ok	!
+Ok	Y
 thank	V
 you	O
 !!	,
@@ -345,39 +345,39 @@ realize	Y
 http://bit.ly/9g4zlQ	Y
 
 "	,
-RUN	V
-DAT	D
+RUN	Y
+DAT	O
 "	,
 by	P
 @USER_cdec18c9	Y
 ft	V
 .	,
 @USER_4828343a	Y
-DOWNLOAD	N
+DOWNLOAD	V
 NOW	R
 !!!!!	,
 http://hulkshare.com/sr9ffmeald2q	Y
 
 @USER_895d4942	Y
-Omg	!
+Omg	Y
 don't	V
 start	V
 with	P
 me	O
 .	,
 
-Free	A
+Free	Y
 3pk	Y
 of	P
 Lindt	Y
 Truffles	Y
 (	,
-US	O
-)	,
+US	^
+)	E
 http://nblo.gs/9Iuzw	Y
 
-Pretty	R
-simple	A
+Pretty	Y
+simple	Y
 actually	R
 .	,
  	Y
@@ -392,7 +392,7 @@ below	Y
 it	O
 in	P
 the	D
-tree	N
+tree	Y
 .	,
  	Y
 The	D
@@ -408,7 +408,7 @@ Scopa	Y
 (	,
 109A	Y
 Plaza	Y
-St.	^
+St.	G
 ,	,
 Healdsburg	Y
 Ave	^
@@ -424,7 +424,7 @@ at	P
 $	G
 6.95	Y
 !	,
-Virtually	R
+Virtually	Y
 try	V
 before	P
 you	O
@@ -438,7 +438,7 @@ Fit	Y
 http://bit.ly/ce5Nvw	Y
 (	,
 Ad	Y
-)	,
+)	E
 
 @USER_cbcd21b7	Y
 on	P
@@ -447,7 +447,7 @@ way	N
 ...	~
 Lol	!
 
-Fake	A
+Fake	Y
 weak	Y
 music	N
 makers	Y
@@ -478,7 +478,7 @@ tell	V
 the	D
 truth	N
 ...	~
-Lies	N
+Lies	Y
 are	V
 not	R
 for	P
@@ -531,7 +531,7 @@ you	O
 <3	E
 
 BRICK	Y
-STRONG	A
+STRONG	Y
 .	,
 RIP	Y
 EVAN	Y
@@ -547,7 +547,7 @@ cost	V
 of	P
 developer	Y
 breakfast	Y
-back	R
+back	T
 to	P
 feed	Y
 100,000	Y
@@ -555,7 +555,7 @@ children	Y
 through	P
 WeFeedback	Y
 
-Beat	V
+Beat	Y
 Fable	^
 3	$
 with	P
@@ -595,7 +595,7 @@ week	N
 !	,
 http://budurl.com/DSobagi	Y
 Good	A
-Luck	N
+Luck	Y
 !	,
 
 RT	~
@@ -613,11 +613,11 @@ i-n-d-e-p-e-n-d-e-n-t	Y
 do	V
 you	O
 know	V
-what	O
+what	X
 means	V
 man	N
 ???	,
-«	~
+«	G
 Ayyye	Y
 !	,
 
@@ -653,7 +653,7 @@ us	O
 u	O
 can	V
 try	V
-all	D
+all	X
 u	O
 want	V
 to	P
@@ -664,7 +664,7 @@ too	R
 strong	A
 ...	~
 so	R
-imma	L
+imma	Y
 n…	Y
 http://lnk.ms/DcpY6	Y
 
@@ -738,10 +738,10 @@ show	N
 
 Sugary	Y
 Drinks	Y
-May	V
+May	^
 Raise	Y
 Diabetes	Y
-Risk	N
+Risk	Y
 :	~
 http://bit.ly/cTwLpF	Y
 via	P
@@ -773,7 +773,7 @@ face	N
 again	R
 (¬_¬	Y
 "	,
-)	,
+)	E
 http://myloc.me/dwFZo	Y
 
 1895	Y
@@ -787,15 +787,15 @@ NEW	A
 ORLEANS	Y
 COIN	Y
 :	~
-US	O
+US	^
 $	G
 465.00	Y
 (	,
 0	$
-Bid	N
-)	,
+Bid	Y
+)	E
 End	^
-Date	N
+Date	Y
 :	~
 Tuesday…	Y
 http://bit.ly/kKth4	Y
@@ -825,13 +825,13 @@ striker	Y
 Michael	^
 Owen	^
 looks	V
-set	N
+set	V
 to	P
 miss	V
 ...	~
 http://bit.ly/9oLnZy	Y
 
-So	R
+So	P
 Glee	Y
 was	V
 cute	A
@@ -850,10 +850,10 @@ WILL	V
 BE	V
 MVP	Y
 THIS	D
-YEAR	N
+YEAR	Y
 
 @USER_8502bff9	Y
-benadryl	^
+benadryl	Y
 is	V
 your	D
 friend	N
@@ -896,7 +896,7 @@ I	O
 smile	V
 !	,
 
-Justin	^
+Justin	Y
 Bieber’s	Y
 '	,
 My	D
@@ -908,12 +908,12 @@ Your	D
 World	^
 Too	R
 on	P
-Black	A
+Black	Y
 Friday	^
 http://bit.ly/bAaiwf	Y
 
 Im	L
-Bout	P
+Bout	Y
 to	P
 eat	V
 something	N
@@ -951,13 +951,13 @@ ago	R
 you	O
 just	R
 weren't	Y
-listening	V
+listening	Y
 ...	~
 now	R
 maybe	R
 you'll	L
 pay	N
-better	A
+better	R
 attention	Y
 
 #HarryPotter	Y
@@ -976,7 +976,7 @@ flickr	Y
 ..	,
 just	R
 thought	V
-id	N
+id	Y
 re-share	Y
 my	D
 fave	Y
@@ -984,7 +984,7 @@ pic	N
 of	P
 @USER_c1860bde	Y
 from	P
-toronto	^
+toronto	Y
 warped	Y
 .	,
 http://flic.kr/p/8hxhBL	Y
@@ -992,7 +992,7 @@ http://flic.kr/p/8hxhBL	Y
 
 @USER_87ee5f65	Y
 Tyra	Y
-mail	^
+mail	Y
 ...	~
 how	R
 r	V
@@ -1004,25 +1004,25 @@ RT	~
 :	~
 When	R
 life	N
-gives	V
+gives	Y
 you	O
 a	D
 hundred	Y
-reasons	N
+reasons	Y
 to	P
 cry	V
 ,	,
 stay	V
 strong	A
 !	,
-Show	N
+Show	^
 life	N
 that	D
 you	O
 have	V
 a	D
 thousand	$
-reasons	N
+reasons	Y
 to	P
 smile	V
 .	,
@@ -1073,7 +1073,7 @@ women	N
 as	P
 full	A
 peacemaking	Y
-partners	N
+partners	Y
 .	,
 #Make1325real	Y
 &	&
@@ -1105,7 +1105,7 @@ Nothin	Y
 new	A
 in	P
 my	D
-book	V
+book	N
 RT	~
 @USER_ae04c9af	Y
 When	R
@@ -1122,7 +1122,7 @@ muscles	Y
 when	R
 he's	L
 goin	V
-OUT	T
+OUT	Y
 !	,
 #sextips	Y
 
@@ -1143,20 +1143,20 @@ head	N
 "	,
 
 @USER_6a789d59	Y
-GETS	V
-ON	P
+GETS	Y
+ON	Y
 MY	D
 MF	Y
 LAST	A
-NERVES	N
+NERVES	Y
 BUT	&
 I	O
-DEAL	N
+DEAL	Y
 WIT	P
 IT	O
 #DEALWITHIT	Y
-BIG	A
-HEAD	N
+BIG	Y
+HEAD	Y
 
 @USER_e123c1ae	Y
 funnn	Y
@@ -1175,7 +1175,7 @@ someones	Y
 life	N
 .	,
 
-Most	R
+Most	A
 of	P
 these	D
 article	N
@@ -1189,7 +1189,7 @@ photos	N
 for	P
 "	,
 Author	Y
-Pics	N
+Pics	Y
 ,"	Y
 but	&
 this	D
@@ -1230,7 +1230,7 @@ hi	!
 internet	N
 <3	E
 
-Sleep	V
+Sleep	N
 ,	,
 bye	!
 !	,
@@ -1245,7 +1245,7 @@ took	V
 of	P
 me	O
 ??	,
-EXACTLY	R
+EXACTLY	Y
 !	,
 Lmao	!
 
@@ -1294,7 +1294,7 @@ so	R
 I	O
 guess	V
 they’re	Y
-all	D
+all	X
 in	P
 gangs	Y
 now	R
@@ -1327,7 +1327,7 @@ outside	R
 !!	,
 
 Andrew	^
--	,
+-	G
 check	V
 out	T
 more	A
@@ -1348,10 +1348,10 @@ This	D
 week	N
 only	A
 .	,
-Order	N
+Order	Y
 staff	N
 from	P
-Open	A
+Open	Y
 .	,
 ph	Y
 and	&
@@ -1361,7 +1361,7 @@ months	Y
 free	A
 .	,
 Offer	Y
-valid	A
+valid	Y
 until	P
 November	^
 5th	^
@@ -1376,7 +1376,7 @@ that	D
 sweepstakesss	Y
 !	,
 
-Off	T
+Off	A
 to	P
 grind	Y
 ...	~
@@ -1399,7 +1399,7 @@ they	O
 give	V
 me	O
 2	$
-what	O
+what	X
 if	P
 I	O
 asked	V
@@ -1421,11 +1421,11 @@ The	D
 Red	Y
 Bandana	Y
 :	~
-An	D
-Argument	N
+An	&
+Argument	Y
 for	P
-Walking	V
--	,
+Walking	Y
+-	G
 TribLocal	Y
 http://bit.ly/aGPvOi	Y
 
@@ -1464,11 +1464,11 @@ now	R
 @USER_cbb2f0dc	Y
 nerp	Y
 !	,
-Wish	V
+Wish	Y
 I	O
 could	V
 
-Spending	V
+Spending	Y
 the	D
 day	N
 withhh	Y
@@ -1488,30 +1488,30 @@ Outlet	N
 Centers	Y
 Announces	Y
 Expanded	Y
-Technology	N
+Technology	Y
 Advances	Y
 and	&
 Social	^
 Media	N
 ...	~
--	,
+-	G
 MarketWatch	Y
 (	,
 press	Y
 release	N
-)	,
+)	E
 http://sns.ly/oIV55	Y
 
 Indiana	Y
 Jones	Y
-Movies	N
+Movies	Y
 Get	V
 3D	Y
 Treatment	Y
 &	&
 Re-Release	Y
 :	~
-Following	V
+Following	Y
 up	T
 on	P
 George	Y
@@ -1530,9 +1530,9 @@ RT	~
 :	~
 out	T
 of	P
-all	D
+all	X
 your	D
-lies	N
+lies	Y
 ,	,
 "	,
 i	O
@@ -1565,7 +1565,7 @@ but	&
 never	R
 late	R
 is	V
-better	A
+better	R
 -Drake	Y
 <3	E
 
@@ -1622,12 +1622,12 @@ need	V
 of	P
 you	O
 
-Yall	O
+Yall	Y
 sholl	Y
 is	V
 quiet	Y
 !!	,
-SPEAK	V
+SPEAK	Y
 UP	T
 lol	!
 RT	~
@@ -1636,7 +1636,7 @@ RT	~
 @USER_830675b5	Y
 We	O
 Still	R
-Here	R
+Here	Y
 !!....	Y
 lol	!
 
@@ -1648,7 +1648,7 @@ fine	A
 
 I	O
 can	V
-usually	R
+usually	Y
 handle	Y
 the	D
 heat	^
@@ -1673,7 +1673,7 @@ comfortable	A
 .	,
 
 @USER_ca38b0a1	Y
-Few	A
+Few	Y
 weeks	N
 ago	R
 someone	N
@@ -1694,10 +1694,10 @@ firsthand	Y
 .	,
 http://ow.ly/302YZ	Y
 
-Wait	V
+Wait	Y
 But	&
 Why	R
-Tho	R
+Tho	Y
 ?	,
 
 Hi	!
@@ -1709,7 +1709,7 @@ have	V
 time	N
 challenges	Y
 ?	,
-Most	R
+Most	A
 of	P
 us	O
 do	V
@@ -1718,7 +1718,7 @@ so	R
 let	V
 me	O
 know	V
--	,
+-	G
 I'd	L
 love	V
 to	P
@@ -1729,7 +1729,7 @@ me	O
 or	&
 send	V
 an	D
-@	P
+@	G
 reply	Y
 &	&
 let's	L
@@ -1744,9 +1744,9 @@ RT	~
 Adam	^
 Lambert	Y
 or	&
-Lady	N
+Lady	^
 Gaga	^
-;	,
+;	G
 who	O
 has	V
 the	D
@@ -1759,8 +1759,8 @@ POLL	Y
 Zoiks	Y
 !	,
 Online	A
--	,
-An	D
+-	G
+An	&
 entertainingly	Y
 hum	Y
 ..	,
@@ -1784,12 +1784,12 @@ smug	Y
 .	,
 
 Yooo	Y
-wtf	!
+wtf	Y
 u	O
 been	V
 at	P
 !!	,
-Txt	V
+Txt	Y
 me	O
 !!	,
 RT	~
@@ -1811,16 +1811,16 @@ Hehehehehe	Y
 
 Are	V
 You	O
-Ready	A
+Ready	Y
 to	P
 Find	V
 out	T
 How	R
 to	P
 Tap	Y
-Into	P
+Into	Y
 Your	D
-True	A
+True	Y
 Potential	Y
 .	,
 http://bit.ly/aguPgx	Y
@@ -1849,7 +1849,7 @@ doin	V
 RT	~
 @USER_9ad2c784	Y
 :	~
-Job	N
+Job	Y
 Of	P
 The	D
 Day	N
@@ -1869,7 +1869,7 @@ Senior	Y
 Creative	Y
 Director	Y
 to	P
-lea	^
+lea	Y
 ...	~
 http	U
 ...	~
@@ -1915,10 +1915,10 @@ RT	~
 :	~
 My	D
 2nd	Y
-book	V
-Straight	R
+book	N
+Straight	Y
 Talk	V
-No	!
+No	D
 Chaser	Y
 ,	,
 has	V
@@ -1950,9 +1950,9 @@ officials	Y
 criticize	Y
 U.S.	^
 #airport	Y
-security	N
+security	Y
 measures	Y
--	,
+-	G
 http://newzfor.me/?9424	Y
 [	,
 Like	P
@@ -2001,7 +2001,7 @@ overexcsesive	Y
 puncutatoin	Y
 .	,
 Yo're	Y
-welcome	V
+welcome	A
 .	,
 <333	E
 "	,
@@ -2009,7 +2009,7 @@ welcome	V
 Was	V
 I	O
 speaking	V
-English	N
+English	Y
 ?	,
 
 RT	~
@@ -2068,8 +2068,8 @@ RT	~
 Bobbito	Y
 Garcia’s	Y
 Playground	Y
-Basketball	N
-Film	N
+Basketball	Y
+Film	Y
 Festival…	Y
 100%	Y
 SWAGG	Y
@@ -2093,14 +2093,14 @@ O	!
 
 This	D
 lil	A
-girl	N
+girl	S
 got	V
 some	D
 unnecessary	Y
 tattoos	Y
 but	&
 the	D
-art	^
+art	N
 work	N
 is	V
 superb	Y
@@ -2144,13 +2144,13 @@ a	D
 hour	N
 
 @USER_73f4155b	Y
-HA	!
+HA	Y
 .	,
-AHA	!
+AHA	Y
 !!!!!	,
 YOU	O
 SO	R
-NASTY	A
+NASTY	Y
 !!!!!!!..	Y
 BUT	&
 I	O
@@ -2194,7 +2194,7 @@ hair	N
 in	P
 a	D
 comb	Y
-over	P
+over	T
 fashion	Y
 more	A
 often	R
@@ -2212,7 +2212,7 @@ i	O
 havent	V
 checked	Y
 my	D
-facebook	^
+facebook	Y
 messages	Y
 in	P
 like	P
@@ -2221,7 +2221,7 @@ weeks	N
 lol	!
 ...	~
 its	L
-all	D
+all	X
 spam	Y
 !	,
 
@@ -2238,7 +2238,7 @@ hangin	Y
 up	T
 ,	,
 and	&
-all	D
+all	X
 i	O
 have	V
 to	P
@@ -2269,7 +2269,7 @@ of	P
 me	O
 tryna	V
 jump	V
-over	P
+over	T
 a	D
 puddle	Y
 .	,
@@ -2279,15 +2279,15 @@ bra	Y
 .	,
 LMAO	!
 .	,
-Funniest	A
+Funniest	Y
 ish	Y
 I've	L
 seen	V
-all	D
+all	X
 day	N
 .	,
 
-american	^
+american	Y
 airlines	Y
 discounts	Y
 from	P
@@ -2306,11 +2306,11 @@ Did	V
 a	D
 lil	A
 cleaning	Y
-Around	R
+Around	Y
 the	D
 house	N
 .	,
-Took	V
+Took	Y
 a	D
 nice	A
 HOT	A
@@ -2377,7 +2377,7 @@ forever	R
 will	V
 hate	V
 the	D
-#celtics	^
+#celtics	Y
 
 @USER_bf65cfa4	Y
 that	D
@@ -2407,19 +2407,19 @@ fan	N
 appreciation	Y
 day	N
 !'	Y
-Over	P
+Over	Y
 and	&
-over	P
+over	T
 and	&
-over	P
+over	T
 .	,
 Epic	Y
-fail	N
+fail	Y
 .	,
 
 the	D
 blog	N
-updates	N
+updates	Y
 begin	Y
 ...	~
 http://fb.me/KCCi1JuT	Y
@@ -2428,7 +2428,7 @@ RT	~
 @USER_c64f7f66	Y
 :	~
 @USER_b279fda7	@
-Forget	V
+Forget	Y
 that	D
 !	,
 I'm	L
@@ -2440,18 +2440,18 @@ tour	N
 in	P
 April	Y
 and	&
-May	V
+May	^
 of	P
 2011	$
 !!!!	,
-Hell	N
+Hell	Y
 to	P
 the	D
 yes	!
 !!!	,
 #AmericaLovesKylie	Y
 
-Inspired	V
+Inspired	Y
 after	P
 a	D
 yummy	Y
@@ -2465,7 +2465,7 @@ Thanks	N
 RT	~
 @USER_0805bd4c	Y
 :	~
-4	P
+4	$
 incredible	A
 wines	Y
 from	P
@@ -2484,7 +2484,7 @@ and	&
 did	V
 we	O
 say	V
-FREE	A
+FREE	Y
 ?	,
 yes	!
 ,	,
@@ -2514,9 +2514,9 @@ Pantone	Y
 is	V
 pleased	Y
 to	P
-announce	V
+announce	Y
 the	D
-PLUS	A
+PLUS	Y
 Series	^
 http://www.pantone.com/plus	Y
 for	P
@@ -2542,7 +2542,7 @@ in	P
 only	A
 boxers	Y
 ,	,
-what	O
+what	X
 happens	Y
 when	R
 this	D
@@ -2564,7 +2564,7 @@ lol	!
 
 http://tiny.cc/kdlmf	Y
 
-Bet	V
+Bet	Y
 on	P
 sports	Y
 with	P
@@ -2573,7 +2573,7 @@ sure-money	Y
 system	Y
 .	,
 Win	V
-over	P
+over	T
 90%	Y
 of	P
 your	D
@@ -2591,7 +2591,7 @@ quirk	Y
 of	P
 '	,
 Native	Y
-Trees	N
+Trees	Y
 of	P
 Canada	^
 '	,
@@ -2652,7 +2652,7 @@ is	V
 on	P
 @USER_dc41b37d	Y
 I	O
-kid	^
+kid	N
 you	O
 not	R
 107.5	Y
@@ -2695,7 +2695,7 @@ get	V
 it	O
 twisted	Y
 ,	,
-imma	L
+imma	Y
 a	D
 big	A
 boy	N
@@ -2718,14 +2718,14 @@ Lol	!
 Cheer	V
 for	P
 the	D
-toronto	^
+toronto	Y
 raptors	Y
 .	,
-#WhoDoesThat	G
+#WhoDoesThat	#
 
 East	^
 Bay	^
-Football	N
+Football	Y
 Poll	Y
 –	,
 10/26	Y
@@ -2734,15 +2734,15 @@ http://nblo.gs/9H1z8	Y
 pin	Y
 :	~
 22B9FB5D	Y
-Add	V
+Add	Y
 Me	O
 
 RT	~
 @USER_32a6ae89	Y
 Climate	Y
-Change	V
+Change	N
 Dispatch	Y
--	,
+-	G
 A	D
 Challenge	Y
 to	P
@@ -2771,7 +2771,7 @@ I	O
 have	V
 not	R
 heard	V
-back	R
+back	T
 from	P
 you	O
 .	,
@@ -2784,7 +2784,7 @@ RT	~
 Want	V
 a	D
 Fool's	Y
-Gold	A
+Gold	Y
 poster	Y
 signed	Y
 by	P
@@ -2792,7 +2792,7 @@ Matthew	Y
 McConaughey	Y
 &	&
 new	A
-Justin	^
+Justin	Y
 Boots	Y
 ?	,
 Tweet	V
@@ -2809,12 +2809,12 @@ http	U
 New	A
 NC	Y
 Highway	Y
-Signs	N
+Signs	Y
 Welcome	V
 Motorists	Y
 To	P
 "	,
-Most	R
+Most	A
 Military	Y
 Friendly	Y
 State	^
@@ -2864,8 +2864,8 @@ a	D
 sample	Y
 sale	N
 
-lmfaoooooo	!
-@	P
+lmfaoooooo	Y
+@	G
 #heats	Y
 
 @USER_79accd00	@
@@ -2877,7 +2877,7 @@ was	V
 still	R
 alive	A
 and	&
-all	D
+all	X
 the	D
 Ewoks	Y
 were	V
@@ -2886,7 +2886,7 @@ prisoners	Y
 not	R
 to	P
 mention	N
-all	D
+all	X
 McFly	Y
 fans)	Y
 ...	~
@@ -2919,10 +2919,10 @@ of	P
 a	D
 good	A
 Twitter	^
-extension	N
+extension	Y
 (	,
 and	&
-extension	N
+extension	Y
 behavior	Y
 in	P
 general)	Y
@@ -2937,7 +2937,7 @@ why	R
 did	V
 they	O
 add	V
-urban	^
+urban	Y
 league	Y
 to	P
 Cleveland	^

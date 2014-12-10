@@ -16,7 +16,7 @@ TRANS_PARAM = []
 TRANS_PARAM_SS = []
 EMISS_PARAM = {}
 
-PENALTY = -99999
+PENALTY = -9999
 
 def log(i):
 	if i == 0:
@@ -29,9 +29,13 @@ class HMM:
 	def __init__(self):
 		self.words = []
 		self.tags = []
+		self.origin_words = []
 
 	def add_to_words(self, word):
 		self.words.append(word)
+
+	def add_to_owords(self, word):
+		self.origin_words.append(word)
 
 	def add_to_tags(self, tag):
 		self.tags.append(tag)
@@ -89,7 +93,7 @@ class HMM:
 
 	def write_to_file(self, f):
 		for i in range(0, self.get_size()):
-			f.write(self.words[i] + "\t" + self.tags[i] + "\n")
+			f.write(self.origin_words[i] + "\t" + self.tags[i] + "\n")
 		f.write("\n")
 
 	def get_unique_words(self):
@@ -195,9 +199,17 @@ class SETS:
 		return temp
 
 	def estimate_emission_param(self, y, x, no_new_word):
-		# return self.overall_count_y(y)
-		# print self.overall_count_y_to_x(y, x)
-		return self.overall_count_y_to_x(y, x)/float(self.overall_count_y(y) + no_new_word)
+		if self.is_new_word(x):
+			# return (self.overall_count_y(y) / float(self.count_total_size())) * \
+			# self.overall_count_y_to_x(y, x)/float(self.overall_count_y(y) + no_new_word)
+			if y == "N":
+				return 1
+			else:
+				return 0
+			# return self.overall_count_y(y) / float(self.count_total_size())
+		else:
+			return self.overall_count_y_to_x(y, x)/float(self.overall_count_y(y) + no_new_word)
+
 
 	def size(self):
 		return len(self.hmmset)
@@ -272,6 +284,12 @@ class SETS:
 				counter += 1
 		return counter
 
+	def count_total_size(self):
+		counter = 0
+		for i in self.hmmset:
+			counter += i.get_size()
+		return counter
+
 
 def readtrain():
 	# read training files from current directory
@@ -280,7 +298,7 @@ def readtrain():
 	# current file path
 	path = os.path.dirname(os.path.realpath(__file__))
 	# read files to look for
-	train = open(path + "\\trainc").read()
+	train = open(path + "\\train").read()
 	print "Reading train file with " + str(len(train.split("\n\n"))) + " tweets"
 
 	train_set = SETS()
@@ -291,20 +309,21 @@ def readtrain():
 			if len(j) == 0:
 				continue
 			tweet.add_to_words(j.split("\t")[0].lower())
+			tweet.add_to_owords(j.split("\t")[0])
 			tweet.add_to_tags(j.split("\t")[1])
 		if tweet.get_size() > 0:
 			train_set.add(tweet)
 	return train_set
 
-def readdevout(filename = "\\dev.out"):
+def readdevout(filename = "dev.out"):
 	# read devout files from current directory
 	# return a list of tweets, within which contains two sequential lists
 	# of words and tags (why not dictionary? words might duplicate)
 	# current file path
 	path = os.path.dirname(os.path.realpath(__file__))
 	# read files to look for
-	devout = open(path + filename).read()
-	print "Reading dev.out file with " + str(len(devout.split("\n\n"))) + " tweets"
+	devout = open(path + "\\" + filename).read()
+	print "Reading " + filename + " file with " + str(len(devout.split("\n\n"))) + " tweets"
 
 	devout_set = SETS()
 	for i in devout.split("\n\n"):
@@ -314,6 +333,7 @@ def readdevout(filename = "\\dev.out"):
 			if len(j) == 0 or len(j.split("\t")) == 1:
 				continue
 			tweet.add_to_words(j.split("\t")[0])
+			tweet.add_to_owords(j.split("\t")[0])
 			tweet.add_to_tags(j.split("\t")[1])
 		if tweet.get_size() > 0:
 			devout_set.add(tweet)
@@ -337,18 +357,19 @@ def readdevin():
 			if len(j) == 0:
 				continue
 			tweet.add_to_words((j.split("\t")[0]).lower())
+			tweet.add_to_owords(j.split("\t")[0])
 		if len(tweet.getwords()) > 0:
 			devin_set.add(tweet)
 	return devin_set
 
-def readtestin():
+def readdatain(filename):
 	# read devin files from current directory
 	# return a list of tweets, within which contains one sequential list of words
 	# current file path
 	path = os.path.dirname(os.path.realpath(__file__))
 	# read files to look for
-	devin = open(path + "\\test.in").read()
-	print "Reading test.in file with " + str(len(devin.split("\n\n"))) + " tweets"
+	devin = open(path + "\\" + filename).read()
+	print "Reading " + filename + " file with " + str(len(devin.split("\n\n"))) + " tweets"
 
 	devin_set = SETS()
 	for i in devin.split("\n\n"):
@@ -358,29 +379,8 @@ def readtestin():
 			if len(j) == 0:
 				continue
 			tweet.add_to_words(j.split("\t")[0].lower())
+			tweet.add_to_owords(j.split("\t")[0])
 		if len(tweet.getwords()) > 0:
-			devin_set.add(tweet)
-	return devin_set
-
-def readdevoutp1():
-	# read devin files from current directory
-	# return a list of tweets, within which contains one sequential list of words
-	# current file path
-	path = os.path.dirname(os.path.realpath(__file__))
-	# read files to look for
-	devin = open(path + "\\dev.p1.out").read()
-	# print "Reading dev.in file with " + str(len(devin.split("\n\n"))) + " tweets"
-
-	devin_set = SETS()
-	for i in devin.split("\n\n"):
-		tweet = HMM()
-		for j in i.split("\n"):
-			# handle file ending
-			if len(j) == 0:
-				continue
-			tweet.add_to_words(j.split("\t")[0])
-			tweet.add_to_tags(j.split("\t")[1])
-		if tweet.get_size() > 0:
 			devin_set.add(tweet)
 	return devin_set
 
@@ -411,12 +411,16 @@ def readparam(filename):
 if __name__=="__main__":
 	# main function here
 	# read files
+	print "50.007 Machine Learning\nDesign Project by Hanwei Li, Tianchi Wang, and Yingbei Wang\nPart III\n"
+	filename = str(raw_input("Please Enter Data Filename (without tags, e.g. test.in) : "))
+	outfilename = str(raw_input("Please Enter The Filename of The File with Tags to Calculate Accuracy (e.g. test.out) : "))
+	print " "
 	trainingset = readtrain()
-	devinset = readdevin()
-	devoutset = readdevout()
+	devinset = readdatain(filename)
+	devoutset = readdevout(outfilename)
 	pairs = {}
 
-	print "Generating params"
+	print "\nComputing Transition Parameters"
 	for i in TAGS:
 		temp = []
 		for j in TAGS:
@@ -426,89 +430,8 @@ if __name__=="__main__":
 		temp = [trainingset.trans_y_to_yp("start", i), trainingset.trans_y_to_yp(i, "end")]
 		TRANS_PARAM_SS.append(temp)
 
+	print "Computing Emission Parameters"
 	trainingset.calculate_emis(devinset.getwords())
-
-	# print "\nCheck if there is trans param file:"
-	# if os.path.isfile("trans.p") and os.path.isfile("trans_ss.p"):
-	# 	TRANS_PARAM = readparam("trans.p")
-	# 	TRANS_PARAM_SS = readparam("trans_ss.p")
-	# else:
-	# 	print "Generating trans params"
-	# 	for i in TAGS:
-	# 		temp = []
-	# 		for j in TAGS:
-	# 			temp.append(trainingset.trans_y_to_yp(i, j))
-	# 		TRANS_PARAM.append(temp)
-	# 	for i in TAGS:
-	# 		temp = [trainingset.trans_y_to_yp("start", i), trainingset.trans_y_to_yp(i, "end")]
-	# 		TRANS_PARAM_SS.append(temp)
-	# 	f = open("trans.p", 'w')
-	# 	f.write(json.dumps(TRANS_PARAM))
-	# 	f.close()
-	# 	f = open("trans_ss.p", 'w')
-	# 	f.write(json.dumps(TRANS_PARAM_SS))
-	# 	f.close()
-
-	# print "\nCheck if there is emis param file:"
-	# if os.path.isfile("emis.p"):
-	# 	EMISS_PARAM = readparam("emis.p")
-	# else:
-	# 	print "Generating emis params"
-	# 	trainingset.calculate_emis(devinset.getwords())
-	# 	f = open("emis.p", 'w')
-	# 	f.write(json.dumps(EMISS_PARAM))
-	# 	f.close()
-
-	print "\n###Part 1###\nProcessing:"
-
-	filename = "dev.p1.out"
-	f = open(filename, "w+")
-	counter = 0
-	word_list = devinset.getwords()
-	no_new_word = trainingset.count_new_words(word_list)
-	length = len(word_list)
-	for i in word_list:
-		if counter%(length/10) == (length/10)-1:
-			print ".",
-		counter += 1
-		pairs[i] = trainingset.pos_tagger(i, no_new_word)
-	devin = open(os.path.dirname(os.path.realpath(__file__)) + "\\dev.in").read()
-
-	for i in devin.split("\n\n"):
-		for j in i.split("\n"):
-			if len(j.lower()) == 0:
-				continue
-			f.write(j + "\t" + pairs[j.lower()] + "\n")
-		f.write("\n")
-	f.close()
-	print "\nAccuracy:" + str(readdevoutp1().get_accuracy(devoutset))
-
-	# # Generate TRANS PARAMS
-	# for i in TAGS:
-	# 	temp = []
-	# 	for j in TAGS:
-	# 		temp.append(trainingset.trans_y_to_yp(i, j))
-	# 	TRANS_PARAM.append(temp)
-	# for i in TAGS:
-	# 	temp = [trainingset.trans_y_to_yp("start", i), trainingset.trans_y_to_yp(i, "end")]
-	# 	TRANS_PARAM_SS.append(temp)
-
-	print "\n###Part 2###\nProcessing:"
-	
-	filename = "dev.p2.out"
-	f = open(filename, "w+")
-	counter = 0
-	length = len(devinset.get_hmmset())
-	for i in devinset.get_hmmset():
-		# print counter
-		if counter%(length/10) == (length/10)-1:
-			print ".",
-		counter += 1
-		i.viterbi()
-		i.write_to_file(f)
-	f.close()
-	# devoutsetp2 = readdevout("\\dev.p2.out")
-	print "\nAccuracy:" + str(devinset.get_accuracy(devoutset))
 
 	emis_improvement() ######
 	filename = "dev.p3.out"
@@ -525,23 +448,5 @@ if __name__=="__main__":
 		i.write_to_file(f)
 	f.close()
 	# devoutsetp2 = readdevout("\\dev.p2.out")
+	print "\nOutput is saved to " + filename
 	print "\nAccuracy:" + str(devinset.get_accuracy(devoutset))
-
-
-	# print "\n###Part 3###\nProcessing:"
-	
-	# testinset = readtestin()
-	# filename = "dev.p3.out"
-	# f = open(filename, "w+")
-	# counter = 0
-	# length = len(testinset.get_hmmset())
-	# for i in testinset.get_hmmset():
-	# 	# print counter
-	# 	if counter%(length/10) == (length/10)-1:
-	# 		print ".",
-	# 	counter += 1
-	# 	i.viterbi()
-	# 	i.write_to_file(f)
-	# f.close()
-	# # devoutsetp2 = readdevout("\\dev.p2.out")
-	# print "\nAccuracy:" + str(testinset.get_accuracy(devoutset))
